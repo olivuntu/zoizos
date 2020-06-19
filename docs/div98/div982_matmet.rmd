@@ -1,0 +1,47 @@
+# Material and methods
+
+## Studied area
+
+Reunion Island is part of the Mascarene volcanic archipelago, situated in the Western Indian Ocean (55°30’ E and 21°05’ S)(Fig. 1). This oceanic island appeared three million years ago. In the centre of the island, a plateau (Plaine des Caffres, $\approx$ 2000 m) is flanked by two volcanoes (Piton de la Fournaise, 2631 m; Piton des Neiges, 3069 m),
+the sides of which slope steeply towards the sea. There is a very steep climatic gradient: the average minimum ground temperature falls below 0°C above 1500 m in August, above 1800 m from June to October, and above 2300 m all year round; at the highest point, the temperature ranges from -10°C to +26°C [@Cadet1974; @Raunet1991]. The studied area, located on the leeward side of the island had a slope of about 0.15 m per m and an annual rainfall ranging from 500 mm at sea level to 2000 mm on the highest mountain slopes [@Raunet1991]. The land is roughly organized through a land use gradient into a succession of elevational belts [@cadet_vegetation_1980] urbanised areas (0-50 m a.s.l.), herbaceous savannah (50-300 m), sugarcane monoculture (300-800 m), rural landscapes with diversified crops (800-1200 m), primary forest mixed with pastures and planted forests (1200-1800 m), heathlands dominated by ericaceous plants (1800-2600 m), and bare soils with a very sparse vegetation of herbaceous species (2600-3069 m) (Fig. ??). Above 1200 m, about 60 ...
+
+## Sampling
+
+The transect was sampled through one survey during the breeding season (December, 1997 - April, 1998), using 363 sample points spread along an elevational gradient from 20 m to 2880 m (Fig. ??). Further prospecting between 2880 and 3069 m (Piton des Neiges) revealed no bird presence. Sea birds nest at these high altitudes but were not considered in the study. This was due to of a lack of vegetation, except for scarce amounts of native herbs and weeds. Sampling points were equally distributed all along the elevational gradient, with a mean elevational distance of 8 m between two successive elevations, and a distance of at least 250 m between two successive count points, a mean sampling pressure of 12.7 count points per 100 m elevational band, and covering the overall diversity of vegetation types. Depressions, ridges and mires were avoided in order to avoid extremely wet or dry places. We also avoided places too close to feeding troughs in grasslands as they
+attract granivorous bird species. We assume that most of the birds were sampled near their nesting sites. In order to limit sampling bias, the different ecosystems found at each 100 m elevational band were surveyed so as not to miss individual bird species specific to individual ecosystems.
+
+## Data analysis
+
+We calculated the weighted mid-point of species distribution as the
+average of all elevations where a species was detected weighted by the
+number of times it was detected. We also compare species maximal and
+minimal elevation where observed along the gradient, and amplitude in
+elevation range. We use the word elevation instead of altitude, as
+elevation is meters above sea level where altitude is meters above
+ground.
+
+We compared observed species richness in the two groups of bird species
+(native and exotic) to two different nul models based on random
+permutations of the original dataset [@Gotelli2000]. In both models,
+species overall abundance, that is the total number of records for each
+species, was preserved in each permutation, in order to account for
+observed differences in species commonness and detectability. The main
+difference between the two nul models was in the treatment of site
+carrying capacity of birds diversity, which under equilibrium hypothesis
+can be estimated as the total numbers of individuals locally. In the
+first nul model (N1), sites are considered as equally suitable for
+birds. In this case, the randomization suppresses any structure that
+exists in the data due to relationships between carying capacity and
+environment (here elevation) in a broad sense. The randomized pattern
+obtained mimics the distribution of species richness not accounting for
+those relationships. In the second nul model (N2), the carying capacity
+of sites, that is local species richness, was preserved by the
+randomization procedure. This model holds account for differences in
+sites to support bird abundance in relation with habitat carrying
+capacity. In this case, the randomized pattern obtained takes into
+account both species commonness and site suitability. The total number
+of individuals observed locally is preserved and species abundance in
+the dataset are preserved, but individuals and samples are randomized
+across sites. For each model, we performed a number of permutations
+($n=1999$) to obtain 95-% confidence intervals on simulated species
+richness.

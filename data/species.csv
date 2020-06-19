@@ -1,0 +1,24 @@
+Species;Common name;Ordre;Famille;Masse;Taille (cm);Status;IUCN
+Acridotheres tristis;Martin (Martin triste);Passeriformes;Sturnidae;82 – 134;23 – 29;E;LC
+Circus maillardi;Papangue (Busard de Maillard);Accipitriformes;Accipitridae;50;650 – 1000;N;EN 
+Collocalia francica;Zirondelle (Salangane des Mascareignes);Apodiformes;Apodidae;7 – 13,3;;N;
+Coturnix chinensis;Caille de Chine (Caille peinte);Galliformes;Phasianidae;31 – 41;12 – 15;E;
+Coturnix coturnix;Caille patate, Caille bois-de-patate;Galliformes;Phasianidae;16;70 - 135;E;
+Estrilda astrild;Bec rose (Astrild ondulé);Passeriformes;Estrildidae;7 – 8;10;E;
+Foudia madagascariensis;Cardinal, Mâle rouge (Foudi de Madagascar);Passeriformes;Ploceidae;13;17 – 19;E;
+Francolinus pondicerianus;Perdrix (Francolin gris);Galliformes;Phasianidae;200 - 340;30 - 32;E;
+Geopelia striata;Tourterelle pays;Columbiformes;Columbidae;;20;E;
+Hypsipetes borbonicus;Merle Pays, Merle (Bulbul de la Réunion);Passeriformes;Pycnonotidae;22;51 - 57;N;
+Lonchura punctata;Coutil, Toulit (Capucin damier);Passeriformes;Estrildidae;11;12 – 15;E;
+Margaroperdrix madagascariensis;Caille malgache, Francolin;Galliformes;Phasianidae;;24 - 26;E;
+Passer domesticus;Moineau;Passeriformes;Passeridae;26 - 32;14 - 16;E;
+Perdicula asiatica;Caille d’Inde, Caille rouge (Perdicule rousse-gorge);Galliformes;Phasianidae;57 - 82;17;E;
+Phedina borbonica;Zirondelle, Grande hirondelle (Hirondelle de Bourbon);Passeriformes;Hirundinidae;;13,5;N;
+Ploceus cucullatus;Bellier (Tisserin gendarme);Passeriformes;Ploceidae;17;32 – 45;E;
+Pycnonotus jocosus;Merle de Maurice, Condé, Oiseau Chapeau (Bulbul orphée);Passeriformes;Pycnonotidae;20;23 – 42;E;
+Saxicola tectes;Tec tec (Tarier de la Réunion);Passeriformes;Muscicapidae;12,5;10,5 – 15;N;
+Streptopelia picturata;Ramier (Tourterelle malgache);Columbiformes;Columbidae;28;145 – 255;E;
+Terpsiphone bourbonnensis;Zoizo la Vierge, Chakouat (Terpsiphone de Bourbon);Passeriformes;Monarchidae;15;10 – 12;N;
+Turnix nigricollis;Caille pays (Hémipode de Madagascar);Turniciformes;Turnicidae;;13;E;
+Zosterops borbonicus;Zoizo blanc (Oiseaux lunettes gris);Passeriformes;Zosteropidae;10;7 – 8;N;
+Zosterops olivaceus;Zoizo vert (Oiseaux-lunettes vert);Passeriformes;Zosteropidae;10,5;9 – 10;N;

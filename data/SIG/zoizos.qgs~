@@ -1,0 +1,3097 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="3.8.1-Zanzibar">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=utm +zone=40 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+      <srsid>942</srsid>
+      <srid>2975</srid>
+      <authid>EPSG:2975</authid>
+      <description>RGR92 / UTM zone 40S</description>
+      <projectionacronym>utm</projectionacronym>
+      <ellipsoidacronym>GRS80</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer providerKey="ogr" name="pts_stoc_livraison" source="./pts_stoc_livraison/pts_stoc_livraison.shp" expanded="1" id="pts_stoc_livraison20170621160837316" checked="Qt::Unchecked">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="ogr" name="zoizos zoizos_974" source="./zoizos/zoizos.gpkg|layername=zoizos_974" expanded="1" id="zoizos_a86d2e0c_89d2_437c_92c1_c7f5200f323a" checked="Qt::Unchecked">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="ogr" name="zoizos" source="./zoizos/zoizos.shp" expanded="1" id="zoizos20150426215945254" checked="Qt::Checked">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="gdal" name="mnt5m_pente" source="../../../../Documents/data/SIG/974/IGN/mnt5_reel4/mnt5m_pente.tif" expanded="1" id="mnt5m_pente20150525192312172" checked="Qt::Unchecked">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="ogr" name="REU_adm0" source="../../../data/974/SIG/MISC/run_lim/REU_adm0.shp" expanded="1" id="REU_adm020150426220028461" checked="Qt::Checked">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>zoizos20150426215945254</item>
+      <item>REU_adm020150426220028461</item>
+      <item>mnt5m_pente20150525192312172</item>
+      <item>pts_stoc_livraison20170621160837316</item>
+      <item>zoizos_a86d2e0c_89d2_437c_92c1_c7f5200f323a</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings intersection-snapping="0" unit="2" type="2" tolerance="0" mode="1" enabled="0">
+    <individual-layer-settings>
+      <layer-setting type="1" tolerance="12" id="zoizos_a86d2e0c_89d2_437c_92c1_c7f5200f323a" units="1" enabled="0"/>
+      <layer-setting type="2" tolerance="0" id="REU_adm020150426220028461" units="0" enabled="0"/>
+      <layer-setting type="2" tolerance="0" id="zoizos20150426215945254" units="0" enabled="0"/>
+      <layer-setting type="2" tolerance="5" id="pts_stoc_livraison20170621160837316" units="1" enabled="1"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>317046.01070940005593002</xmin>
+      <ymin>7639113.12546638026833534</ymin>
+      <xmax>360467.61013967136386782</xmax>
+      <ymax>7677799.0645798072218895</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=utm +zone=40 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>942</srsid>
+        <srid>2975</srid>
+        <authid>EPSG:2975</authid>
+        <description>RGR92 / UTM zone 40S</description>
+        <projectionacronym>utm</projectionacronym>
+        <ellipsoidacronym>GRS80</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer name="pts_stoc_livraison" showFeatureCount="0" open="true" drawingOrder="-1" checked="Qt::Unchecked">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" layerid="pts_stoc_livraison20170621160837316" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer name="zoizos zoizos_974" showFeatureCount="0" open="true" drawingOrder="-1" checked="Qt::Unchecked">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" layerid="zoizos_a86d2e0c_89d2_437c_92c1_c7f5200f323a" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer name="zoizos" showFeatureCount="0" open="true" drawingOrder="-1" checked="Qt::Checked">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" layerid="zoizos20150426215945254" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer name="mnt5m_pente" showFeatureCount="0" open="true" drawingOrder="-1" checked="Qt::Unchecked">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" layerid="mnt5m_pente20150525192312172" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer name="REU_adm0" showFeatureCount="0" open="true" drawingOrder="-1" checked="Qt::Checked">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" layerid="REU_adm020150426220028461" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <projectlayers>
+    <maplayer refreshOnNotifyMessage="" maxScale="0" autoRefreshEnabled="0" labelsEnabled="0" minScale="1e+8" simplifyDrawingHints="1" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" simplifyAlgorithm="0" type="vector" wkbType="MultiPolygon" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories" readOnly="0" geometry="Polygon" simplifyDrawingTol="1" simplifyMaxScale="1">
+      <extent>
+        <xmin>55.216251373291243</xmin>
+        <ymin>-21.38986015319818534</ymin>
+        <xmax>55.83736038208019892</xmax>
+        <ymax>-20.87180519104005327</ymax>
+      </extent>
+      <id>REU_adm020150426220028461</id>
+      <datasource>../../../data/974/SIG/MISC/run_lim/REU_adm0.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>REU_adm0</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>true</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" maxx="0" minz="0" dimensions="2" miny="0" maxz="0" minx="0" crs=""/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="ISO-8859-1">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol clip_to_extent="1" name="0" type="fill" alpha="1" force_rhr="0">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="166,184,196,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory penAlpha="255" maxScaleDenominator="1e+8" labelPlacementMethod="XHeight" enabled="0" lineSizeType="MM" backgroundAlpha="255" diagramOrientation="Up" penColor="#000000" height="15" sizeType="MM" scaleBasedVisibility="0" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" width="15" scaleDependency="Area" penWidth="0" sizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" minimumSize="0" opacity="1" barWidth="5" minScaleDenominator="0">
+          <fontProperties style="" description="Ubuntu,12,-1,5,50,0,0,0,0,0"/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings obstacle="0" placement="1" zIndex="0" showAll="1" linePlacementFlags="18" dist="0" priority="0">
+        <properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="ID_0">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ISO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_ENGLI">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_ISO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_FAO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_LOCAL">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_OBSOL">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_VARIA">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_NONLA">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_FRENC">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_SPANI">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_RUSSI">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_ARABI">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_CHINE">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="WASPARTOF">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CONTAINS">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SOVEREIGN">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ISO2">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="WWW">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FIPS">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ISON">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="VALIDFR">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="VALIDTO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="EUmember">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="ID_0" name="" index="0"/>
+        <alias field="ISO" name="" index="1"/>
+        <alias field="NAME_ENGLI" name="" index="2"/>
+        <alias field="NAME_ISO" name="" index="3"/>
+        <alias field="NAME_FAO" name="" index="4"/>
+        <alias field="NAME_LOCAL" name="" index="5"/>
+        <alias field="NAME_OBSOL" name="" index="6"/>
+        <alias field="NAME_VARIA" name="" index="7"/>
+        <alias field="NAME_NONLA" name="" index="8"/>
+        <alias field="NAME_FRENC" name="" index="9"/>
+        <alias field="NAME_SPANI" name="" index="10"/>
+        <alias field="NAME_RUSSI" name="" index="11"/>
+        <alias field="NAME_ARABI" name="" index="12"/>
+        <alias field="NAME_CHINE" name="" index="13"/>
+        <alias field="WASPARTOF" name="" index="14"/>
+        <alias field="CONTAINS" name="" index="15"/>
+        <alias field="SOVEREIGN" name="" index="16"/>
+        <alias field="ISO2" name="" index="17"/>
+        <alias field="WWW" name="" index="18"/>
+        <alias field="FIPS" name="" index="19"/>
+        <alias field="ISON" name="" index="20"/>
+        <alias field="VALIDFR" name="" index="21"/>
+        <alias field="VALIDTO" name="" index="22"/>
+        <alias field="EUmember" name="" index="23"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="ID_0" applyOnUpdate="0" expression=""/>
+        <default field="ISO" applyOnUpdate="0" expression=""/>
+        <default field="NAME_ENGLI" applyOnUpdate="0" expression=""/>
+        <default field="NAME_ISO" applyOnUpdate="0" expression=""/>
+        <default field="NAME_FAO" applyOnUpdate="0" expression=""/>
+        <default field="NAME_LOCAL" applyOnUpdate="0" expression=""/>
+        <default field="NAME_OBSOL" applyOnUpdate="0" expression=""/>
+        <default field="NAME_VARIA" applyOnUpdate="0" expression=""/>
+        <default field="NAME_NONLA" applyOnUpdate="0" expression=""/>
+        <default field="NAME_FRENC" applyOnUpdate="0" expression=""/>
+        <default field="NAME_SPANI" applyOnUpdate="0" expression=""/>
+        <default field="NAME_RUSSI" applyOnUpdate="0" expression=""/>
+        <default field="NAME_ARABI" applyOnUpdate="0" expression=""/>
+        <default field="NAME_CHINE" applyOnUpdate="0" expression=""/>
+        <default field="WASPARTOF" applyOnUpdate="0" expression=""/>
+        <default field="CONTAINS" applyOnUpdate="0" expression=""/>
+        <default field="SOVEREIGN" applyOnUpdate="0" expression=""/>
+        <default field="ISO2" applyOnUpdate="0" expression=""/>
+        <default field="WWW" applyOnUpdate="0" expression=""/>
+        <default field="FIPS" applyOnUpdate="0" expression=""/>
+        <default field="ISON" applyOnUpdate="0" expression=""/>
+        <default field="VALIDFR" applyOnUpdate="0" expression=""/>
+        <default field="VALIDTO" applyOnUpdate="0" expression=""/>
+        <default field="EUmember" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="ID_0" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ISO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_ENGLI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_ISO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_FAO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_LOCAL" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_OBSOL" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_VARIA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_NONLA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_FRENC" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_SPANI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_RUSSI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_ARABI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="NAME_CHINE" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="WASPARTOF" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="CONTAINS" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="SOVEREIGN" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ISO2" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="WWW" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="FIPS" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ISON" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="VALIDFR" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="VALIDTO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="EUmember" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="ID_0" exp="" desc=""/>
+        <constraint field="ISO" exp="" desc=""/>
+        <constraint field="NAME_ENGLI" exp="" desc=""/>
+        <constraint field="NAME_ISO" exp="" desc=""/>
+        <constraint field="NAME_FAO" exp="" desc=""/>
+        <constraint field="NAME_LOCAL" exp="" desc=""/>
+        <constraint field="NAME_OBSOL" exp="" desc=""/>
+        <constraint field="NAME_VARIA" exp="" desc=""/>
+        <constraint field="NAME_NONLA" exp="" desc=""/>
+        <constraint field="NAME_FRENC" exp="" desc=""/>
+        <constraint field="NAME_SPANI" exp="" desc=""/>
+        <constraint field="NAME_RUSSI" exp="" desc=""/>
+        <constraint field="NAME_ARABI" exp="" desc=""/>
+        <constraint field="NAME_CHINE" exp="" desc=""/>
+        <constraint field="WASPARTOF" exp="" desc=""/>
+        <constraint field="CONTAINS" exp="" desc=""/>
+        <constraint field="SOVEREIGN" exp="" desc=""/>
+        <constraint field="ISO2" exp="" desc=""/>
+        <constraint field="WWW" exp="" desc=""/>
+        <constraint field="FIPS" exp="" desc=""/>
+        <constraint field="ISON" exp="" desc=""/>
+        <constraint field="VALIDFR" exp="" desc=""/>
+        <constraint field="VALIDTO" exp="" desc=""/>
+        <constraint field="EUmember" exp="" desc=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns>
+          <column name="ID_0" hidden="0" width="-1" type="field"/>
+          <column name="ISO" hidden="0" width="-1" type="field"/>
+          <column name="NAME_ENGLI" hidden="0" width="-1" type="field"/>
+          <column name="NAME_ISO" hidden="0" width="-1" type="field"/>
+          <column name="NAME_FAO" hidden="0" width="-1" type="field"/>
+          <column name="NAME_LOCAL" hidden="0" width="-1" type="field"/>
+          <column name="NAME_OBSOL" hidden="0" width="-1" type="field"/>
+          <column name="NAME_VARIA" hidden="0" width="-1" type="field"/>
+          <column name="NAME_NONLA" hidden="0" width="-1" type="field"/>
+          <column name="NAME_FRENC" hidden="0" width="-1" type="field"/>
+          <column name="NAME_SPANI" hidden="0" width="-1" type="field"/>
+          <column name="NAME_RUSSI" hidden="0" width="-1" type="field"/>
+          <column name="NAME_ARABI" hidden="0" width="-1" type="field"/>
+          <column name="NAME_CHINE" hidden="0" width="-1" type="field"/>
+          <column name="WASPARTOF" hidden="0" width="-1" type="field"/>
+          <column name="CONTAINS" hidden="0" width="-1" type="field"/>
+          <column name="SOVEREIGN" hidden="0" width="-1" type="field"/>
+          <column name="ISO2" hidden="0" width="-1" type="field"/>
+          <column name="WWW" hidden="0" width="-1" type="field"/>
+          <column name="FIPS" hidden="0" width="-1" type="field"/>
+          <column name="ISON" hidden="0" width="-1" type="field"/>
+          <column name="VALIDFR" hidden="0" width="-1" type="field"/>
+          <column name="VALIDTO" hidden="0" width="-1" type="field"/>
+          <column name="EUmember" hidden="0" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1">.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="CONTAINS"/>
+        <field editable="1" name="EUmember"/>
+        <field editable="1" name="FIPS"/>
+        <field editable="1" name="ID_0"/>
+        <field editable="1" name="ISO"/>
+        <field editable="1" name="ISO2"/>
+        <field editable="1" name="ISON"/>
+        <field editable="1" name="NAME_ARABI"/>
+        <field editable="1" name="NAME_CHINE"/>
+        <field editable="1" name="NAME_ENGLI"/>
+        <field editable="1" name="NAME_FAO"/>
+        <field editable="1" name="NAME_FRENC"/>
+        <field editable="1" name="NAME_ISO"/>
+        <field editable="1" name="NAME_LOCAL"/>
+        <field editable="1" name="NAME_NONLA"/>
+        <field editable="1" name="NAME_OBSOL"/>
+        <field editable="1" name="NAME_RUSSI"/>
+        <field editable="1" name="NAME_SPANI"/>
+        <field editable="1" name="NAME_VARIA"/>
+        <field editable="1" name="SOVEREIGN"/>
+        <field editable="1" name="VALIDFR"/>
+        <field editable="1" name="VALIDTO"/>
+        <field editable="1" name="WASPARTOF"/>
+        <field editable="1" name="WWW"/>
+      </editable>
+      <labelOnTop>
+        <field name="CONTAINS" labelOnTop="0"/>
+        <field name="EUmember" labelOnTop="0"/>
+        <field name="FIPS" labelOnTop="0"/>
+        <field name="ID_0" labelOnTop="0"/>
+        <field name="ISO" labelOnTop="0"/>
+        <field name="ISO2" labelOnTop="0"/>
+        <field name="ISON" labelOnTop="0"/>
+        <field name="NAME_ARABI" labelOnTop="0"/>
+        <field name="NAME_CHINE" labelOnTop="0"/>
+        <field name="NAME_ENGLI" labelOnTop="0"/>
+        <field name="NAME_FAO" labelOnTop="0"/>
+        <field name="NAME_FRENC" labelOnTop="0"/>
+        <field name="NAME_ISO" labelOnTop="0"/>
+        <field name="NAME_LOCAL" labelOnTop="0"/>
+        <field name="NAME_NONLA" labelOnTop="0"/>
+        <field name="NAME_OBSOL" labelOnTop="0"/>
+        <field name="NAME_RUSSI" labelOnTop="0"/>
+        <field name="NAME_SPANI" labelOnTop="0"/>
+        <field name="NAME_VARIA" labelOnTop="0"/>
+        <field name="SOVEREIGN" labelOnTop="0"/>
+        <field name="VALIDFR" labelOnTop="0"/>
+        <field name="VALIDTO" labelOnTop="0"/>
+        <field name="WASPARTOF" labelOnTop="0"/>
+        <field name="WWW" labelOnTop="0"/>
+      </labelOnTop>
+      <widgets/>
+      <previewExpression>NAME_ENGLI</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" type="raster" maxScale="-4.65661e-10" styleCategories="AllStyleCategories" minScale="1e+8" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" autoRefreshTime="0">
+      <extent>
+        <xmin>309997.5</xmin>
+        <ymin>7629997.5</ymin>
+        <xmax>380002.5</xmax>
+        <ymax>7695002.5</ymax>
+      </extent>
+      <id>mnt5m_pente20150525192312172</id>
+      <datasource>../../../../Documents/data/SIG/974/IGN/mnt5_reel4/mnt5m_pente.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>mnt5m_pente</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=40 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>942</srsid>
+          <srid>2975</srid>
+          <authid>EPSG:2975</authid>
+          <description>RGR92 / UTM zone 40S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>true</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer type="singlebandgray" alphaBand="0" gradient="WhiteToBlack" grayBand="1" opacity="0.490196">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+          <contrastEnhancement>
+            <minValue>1.04919</minValue>
+            <maxValue>64.8752</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </contrastEnhancement>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" grayscaleMode="0" colorizeOn="0" colorizeRed="255" colorizeStrength="100" saturation="0" colorizeBlue="128"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer refreshOnNotifyMessage="" maxScale="0" autoRefreshEnabled="0" labelsEnabled="1" minScale="1e+8" simplifyDrawingHints="0" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" simplifyAlgorithm="0" type="vector" wkbType="Point" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories" readOnly="0" geometry="Point" simplifyDrawingTol="1" simplifyMaxScale="1">
+      <extent>
+        <xmin>329153</xmin>
+        <ymin>7637778</ymin>
+        <xmax>375188</xmax>
+        <ymax>7687904</ymax>
+      </extent>
+      <id>pts_stoc_livraison20170621160837316</id>
+      <datasource>./pts_stoc_livraison/pts_stoc_livraison.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>pts_stoc_livraison</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=40 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>942</srsid>
+          <srid>2975</srid>
+          <authid>EPSG:2975</authid>
+          <description>RGR92 / UTM zone 40S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>true</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol clip_to_extent="1" name="0" type="marker" alpha="1" force_rhr="0">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="232,51,6,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2.6"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions" value="&quot;name&quot;"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>0.6</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory penAlpha="255" maxScaleDenominator="1e+8" labelPlacementMethod="XHeight" enabled="0" lineSizeType="MM" backgroundAlpha="255" diagramOrientation="Up" penColor="#000000" height="15" sizeType="MM" scaleBasedVisibility="0" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" width="15" scaleDependency="Area" penWidth="0" sizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" minimumSize="0" opacity="1" barWidth="5" minScaleDenominator="inf">
+          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings obstacle="0" placement="0" zIndex="0" showAll="1" linePlacementFlags="10" dist="0" priority="0">
+        <properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="Nom">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Prenom">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Itineraire">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Point">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Milieu_d">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="time">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="src">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="x">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="y">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ele">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MILIEU">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="mos">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Milieu d_1">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ALTITUDE">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="Nom" name="" index="0"/>
+        <alias field="Prenom" name="" index="1"/>
+        <alias field="Itineraire" name="" index="2"/>
+        <alias field="Point" name="" index="3"/>
+        <alias field="Milieu_d" name="" index="4"/>
+        <alias field="name" name="" index="5"/>
+        <alias field="time" name="" index="6"/>
+        <alias field="src" name="" index="7"/>
+        <alias field="x" name="" index="8"/>
+        <alias field="y" name="" index="9"/>
+        <alias field="ele" name="" index="10"/>
+        <alias field="MILIEU" name="" index="11"/>
+        <alias field="mos" name="" index="12"/>
+        <alias field="Milieu d_1" name="" index="13"/>
+        <alias field="ALTITUDE" name="" index="14"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="Nom" applyOnUpdate="0" expression=""/>
+        <default field="Prenom" applyOnUpdate="0" expression=""/>
+        <default field="Itineraire" applyOnUpdate="0" expression=""/>
+        <default field="Point" applyOnUpdate="0" expression=""/>
+        <default field="Milieu_d" applyOnUpdate="0" expression=""/>
+        <default field="name" applyOnUpdate="0" expression=""/>
+        <default field="time" applyOnUpdate="0" expression=""/>
+        <default field="src" applyOnUpdate="0" expression=""/>
+        <default field="x" applyOnUpdate="0" expression=""/>
+        <default field="y" applyOnUpdate="0" expression=""/>
+        <default field="ele" applyOnUpdate="0" expression=""/>
+        <default field="MILIEU" applyOnUpdate="0" expression=""/>
+        <default field="mos" applyOnUpdate="0" expression=""/>
+        <default field="Milieu d_1" applyOnUpdate="0" expression=""/>
+        <default field="ALTITUDE" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="Nom" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="Prenom" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="Itineraire" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="Point" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="Milieu_d" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="name" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="time" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="src" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="x" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="y" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ele" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="MILIEU" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="mos" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="Milieu d_1" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ALTITUDE" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="Nom" exp="" desc=""/>
+        <constraint field="Prenom" exp="" desc=""/>
+        <constraint field="Itineraire" exp="" desc=""/>
+        <constraint field="Point" exp="" desc=""/>
+        <constraint field="Milieu_d" exp="" desc=""/>
+        <constraint field="name" exp="" desc=""/>
+        <constraint field="time" exp="" desc=""/>
+        <constraint field="src" exp="" desc=""/>
+        <constraint field="x" exp="" desc=""/>
+        <constraint field="y" exp="" desc=""/>
+        <constraint field="ele" exp="" desc=""/>
+        <constraint field="MILIEU" exp="" desc=""/>
+        <constraint field="mos" exp="" desc=""/>
+        <constraint field="Milieu d_1" exp="" desc=""/>
+        <constraint field="ALTITUDE" exp="" desc=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns>
+          <column name="Nom" hidden="0" width="-1" type="field"/>
+          <column name="Prenom" hidden="0" width="-1" type="field"/>
+          <column name="Itineraire" hidden="0" width="-1" type="field"/>
+          <column name="Point" hidden="0" width="-1" type="field"/>
+          <column name="Milieu_d" hidden="0" width="-1" type="field"/>
+          <column name="name" hidden="0" width="-1" type="field"/>
+          <column name="time" hidden="0" width="-1" type="field"/>
+          <column name="src" hidden="0" width="-1" type="field"/>
+          <column name="x" hidden="0" width="-1" type="field"/>
+          <column name="y" hidden="0" width="-1" type="field"/>
+          <column name="ele" hidden="0" width="-1" type="field"/>
+          <column name="MILIEU" hidden="0" width="-1" type="field"/>
+          <column name="mos" hidden="0" width="-1" type="field"/>
+          <column name="Milieu d_1" hidden="0" width="-1" type="field"/>
+          <column name="ALTITUDE" hidden="0" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression>"name"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer refreshOnNotifyMessage="" maxScale="0" autoRefreshEnabled="0" labelsEnabled="0" minScale="1e+8" simplifyDrawingHints="0" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" simplifyAlgorithm="0" type="vector" wkbType="Point" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories" readOnly="0" geometry="Point" simplifyDrawingTol="1" simplifyMaxScale="1">
+      <extent>
+        <xmin>316359.22597753955051303</xmin>
+        <ymin>7640479.1009028535336256</ymin>
+        <xmax>362030.878990022407379</xmax>
+        <ymax>7675019.05804127547889948</ymax>
+      </extent>
+      <id>zoizos20150426215945254</id>
+      <datasource>./zoizos/zoizos.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>zoizos</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=40 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>942</srsid>
+          <srid>2975</srid>
+          <authid>EPSG:2975</authid>
+          <description>RGR92 / UTM zone 40S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>true</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" maxx="0" minz="0" dimensions="2" miny="0" maxz="0" minx="0" crs=""/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="ISO-8859-1">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 symbollevels="0" forceraster="0" attr="BOCO" type="graduatedSymbol" enableorderby="0" graduatedMethod="GraduatedColor">
+        <ranges>
+          <range upper="0.200000000000000" render="true" symbol="0" label="0,0000 - 0,2000" lower="0.000000000000000"/>
+          <range upper="0.400000000000000" render="true" symbol="1" label="0,2000 - 0,4000" lower="0.200000000000000"/>
+          <range upper="0.600000000000000" render="true" symbol="2" label="0,4000 - 0,6000" lower="0.400000000000000"/>
+          <range upper="0.800000000000000" render="true" symbol="3" label="0,6000 - 0,8000" lower="0.600000000000000"/>
+          <range upper="1.000000000000000" render="true" symbol="4" label="0,8000 - 1,0000" lower="0.800000000000000"/>
+        </ranges>
+        <symbols>
+          <symbol clip_to_extent="1" name="0" type="marker" alpha="0.6" force_rhr="0">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="0,0,4,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="2.6"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol clip_to_extent="1" name="1" type="marker" alpha="0.6" force_rhr="0">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="80,18,123,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="2.6"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol clip_to_extent="1" name="2" type="marker" alpha="0.6" force_rhr="0">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="182,54,121,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="2.6"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol clip_to_extent="1" name="3" type="marker" alpha="0.6" force_rhr="0">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="252,135,97,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="2.6"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol clip_to_extent="1" name="4" type="marker" alpha="0.6" force_rhr="0">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="252,253,191,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="2.6"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
+          <symbol clip_to_extent="1" name="0" type="marker" alpha="0.6" force_rhr="0">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="137,198,137,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="2.6"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <colorramp name="[source]" type="gradient">
+          <prop k="color1" v="0,0,4,255"/>
+          <prop k="color2" v="252,253,191,255"/>
+          <prop k="discrete" v="0"/>
+          <prop k="rampType" v="gradient"/>
+          <prop k="stops" v="0.0196078;2,2,11,255:0.0392157;5,4,22,255:0.0588235;9,7,32,255:0.0784314;14,11,43,255:0.0980392;20,14,54,255:0.117647;26,16,66,255:0.137255;33,17,78,255:0.156863;41,17,90,255:0.176471;49,17,101,255:0.196078;57,15,110,255:0.215686;66,15,117,255:0.235294;74,16,121,255:0.254902;82,19,124,255:0.27451;90,22,126,255:0.294118;98,25,128,255:0.313725;106,28,129,255:0.333333;114,31,129,255:0.352941;121,34,130,255:0.372549;129,37,129,255:0.392157;137,40,129,255:0.411765;145,43,129,255:0.431373;153,45,128,255:0.45098;161,48,126,255:0.470588;170,51,125,255:0.490196;178,53,123,255:0.509804;186,56,120,255:0.529412;194,59,117,255:0.54902;202,62,114,255:0.568627;210,66,111,255:0.588235;217,70,107,255:0.607843;224,76,103,255:0.627451;231,82,99,255:0.647059;236,88,96,255:0.666667;241,96,93,255:0.686275;244,105,92,255:0.705882;247,114,92,255:0.72549;249,123,93,255:0.745098;251,133,96,255:0.764706;252,142,100,255:0.784314;253,152,105,255:0.803922;254,161,110,255:0.823529;254,170,116,255:0.843137;254,180,123,255:0.862745;254,189,130,255:0.882353;254,198,138,255:0.901961;254,207,146,255:0.921569;254,216,154,255:0.941176;253,226,163,255:0.960784;253,235,172,255:0.980392;252,244,182,255"/>
+        </colorramp>
+        <mode name="equal"/>
+        <symmetricMode symmetryPoint="0" astride="false" enabled="false"/>
+        <rotation/>
+        <sizescale/>
+        <labelformat decimalplaces="2" trimtrailingzeroes="false" format="%1 - %2"/>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions" value="COALESCE( &quot;ID&quot;, '&lt;NULL>' )"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory penAlpha="255" maxScaleDenominator="1e+8" labelPlacementMethod="XHeight" enabled="0" lineSizeType="MM" backgroundAlpha="255" diagramOrientation="Up" penColor="#000000" height="15" sizeType="MM" scaleBasedVisibility="0" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" width="15" scaleDependency="Area" penWidth="0" sizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" minimumSize="0" opacity="1" barWidth="5" minScaleDenominator="-2.14748e+9">
+          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings obstacle="0" placement="0" zIndex="0" showAll="1" linePlacementFlags="2" dist="0" priority="0">
+        <properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="NOS">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ACTR">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CIMA">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COCH">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COCO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COFR">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ESAS">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FOMA">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FRPO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="GEST">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="HYBO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LOPU">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MAMA">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PADO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PEAS">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PHBO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PLCU">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PYJO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SATE">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="STPI">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TEBO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TUNI">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ZOBO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ZOOL">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ALTI">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ACDE">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ACMI">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="BOCO">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="BRAN">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CANN">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CRYP">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CULT">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FOEX">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FRAR">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FRBA">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PATU">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SAAR">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SAHE">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TAMA">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="URBA">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="pub">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ID">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="X">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Y">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="NOS" name="" index="0"/>
+        <alias field="ACTR" name="" index="1"/>
+        <alias field="CIMA" name="" index="2"/>
+        <alias field="COCH" name="" index="3"/>
+        <alias field="COCO" name="" index="4"/>
+        <alias field="COFR" name="" index="5"/>
+        <alias field="ESAS" name="" index="6"/>
+        <alias field="FOMA" name="" index="7"/>
+        <alias field="FRPO" name="" index="8"/>
+        <alias field="GEST" name="" index="9"/>
+        <alias field="HYBO" name="" index="10"/>
+        <alias field="LOPU" name="" index="11"/>
+        <alias field="MAMA" name="" index="12"/>
+        <alias field="PADO" name="" index="13"/>
+        <alias field="PEAS" name="" index="14"/>
+        <alias field="PHBO" name="" index="15"/>
+        <alias field="PLCU" name="" index="16"/>
+        <alias field="PYJO" name="" index="17"/>
+        <alias field="SATE" name="" index="18"/>
+        <alias field="STPI" name="" index="19"/>
+        <alias field="TEBO" name="" index="20"/>
+        <alias field="TUNI" name="" index="21"/>
+        <alias field="ZOBO" name="" index="22"/>
+        <alias field="ZOOL" name="" index="23"/>
+        <alias field="ALTI" name="" index="24"/>
+        <alias field="ACDE" name="" index="25"/>
+        <alias field="ACMI" name="" index="26"/>
+        <alias field="BOCO" name="" index="27"/>
+        <alias field="BRAN" name="" index="28"/>
+        <alias field="CANN" name="" index="29"/>
+        <alias field="CRYP" name="" index="30"/>
+        <alias field="CULT" name="" index="31"/>
+        <alias field="FOEX" name="" index="32"/>
+        <alias field="FRAR" name="" index="33"/>
+        <alias field="FRBA" name="" index="34"/>
+        <alias field="PATU" name="" index="35"/>
+        <alias field="SAAR" name="" index="36"/>
+        <alias field="SAHE" name="" index="37"/>
+        <alias field="TAMA" name="" index="38"/>
+        <alias field="URBA" name="" index="39"/>
+        <alias field="pub" name="" index="40"/>
+        <alias field="ID" name="" index="41"/>
+        <alias field="X" name="" index="42"/>
+        <alias field="Y" name="" index="43"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="NOS" applyOnUpdate="0" expression=""/>
+        <default field="ACTR" applyOnUpdate="0" expression=""/>
+        <default field="CIMA" applyOnUpdate="0" expression=""/>
+        <default field="COCH" applyOnUpdate="0" expression=""/>
+        <default field="COCO" applyOnUpdate="0" expression=""/>
+        <default field="COFR" applyOnUpdate="0" expression=""/>
+        <default field="ESAS" applyOnUpdate="0" expression=""/>
+        <default field="FOMA" applyOnUpdate="0" expression=""/>
+        <default field="FRPO" applyOnUpdate="0" expression=""/>
+        <default field="GEST" applyOnUpdate="0" expression=""/>
+        <default field="HYBO" applyOnUpdate="0" expression=""/>
+        <default field="LOPU" applyOnUpdate="0" expression=""/>
+        <default field="MAMA" applyOnUpdate="0" expression=""/>
+        <default field="PADO" applyOnUpdate="0" expression=""/>
+        <default field="PEAS" applyOnUpdate="0" expression=""/>
+        <default field="PHBO" applyOnUpdate="0" expression=""/>
+        <default field="PLCU" applyOnUpdate="0" expression=""/>
+        <default field="PYJO" applyOnUpdate="0" expression=""/>
+        <default field="SATE" applyOnUpdate="0" expression=""/>
+        <default field="STPI" applyOnUpdate="0" expression=""/>
+        <default field="TEBO" applyOnUpdate="0" expression=""/>
+        <default field="TUNI" applyOnUpdate="0" expression=""/>
+        <default field="ZOBO" applyOnUpdate="0" expression=""/>
+        <default field="ZOOL" applyOnUpdate="0" expression=""/>
+        <default field="ALTI" applyOnUpdate="0" expression=""/>
+        <default field="ACDE" applyOnUpdate="0" expression=""/>
+        <default field="ACMI" applyOnUpdate="0" expression=""/>
+        <default field="BOCO" applyOnUpdate="0" expression=""/>
+        <default field="BRAN" applyOnUpdate="0" expression=""/>
+        <default field="CANN" applyOnUpdate="0" expression=""/>
+        <default field="CRYP" applyOnUpdate="0" expression=""/>
+        <default field="CULT" applyOnUpdate="0" expression=""/>
+        <default field="FOEX" applyOnUpdate="0" expression=""/>
+        <default field="FRAR" applyOnUpdate="0" expression=""/>
+        <default field="FRBA" applyOnUpdate="0" expression=""/>
+        <default field="PATU" applyOnUpdate="0" expression=""/>
+        <default field="SAAR" applyOnUpdate="0" expression=""/>
+        <default field="SAHE" applyOnUpdate="0" expression=""/>
+        <default field="TAMA" applyOnUpdate="0" expression=""/>
+        <default field="URBA" applyOnUpdate="0" expression=""/>
+        <default field="pub" applyOnUpdate="0" expression=""/>
+        <default field="ID" applyOnUpdate="0" expression=""/>
+        <default field="X" applyOnUpdate="0" expression=""/>
+        <default field="Y" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="NOS" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ACTR" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="CIMA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="COCH" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="COCO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="COFR" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ESAS" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="FOMA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="FRPO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="GEST" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="HYBO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="LOPU" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="MAMA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PADO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PEAS" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PHBO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PLCU" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PYJO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="SATE" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="STPI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="TEBO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="TUNI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ZOBO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ZOOL" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ALTI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ACDE" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ACMI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="BOCO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="BRAN" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="CANN" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="CRYP" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="CULT" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="FOEX" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="FRAR" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="FRBA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PATU" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="SAAR" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="SAHE" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="TAMA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="URBA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="pub" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ID" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="X" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="Y" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="NOS" exp="" desc=""/>
+        <constraint field="ACTR" exp="" desc=""/>
+        <constraint field="CIMA" exp="" desc=""/>
+        <constraint field="COCH" exp="" desc=""/>
+        <constraint field="COCO" exp="" desc=""/>
+        <constraint field="COFR" exp="" desc=""/>
+        <constraint field="ESAS" exp="" desc=""/>
+        <constraint field="FOMA" exp="" desc=""/>
+        <constraint field="FRPO" exp="" desc=""/>
+        <constraint field="GEST" exp="" desc=""/>
+        <constraint field="HYBO" exp="" desc=""/>
+        <constraint field="LOPU" exp="" desc=""/>
+        <constraint field="MAMA" exp="" desc=""/>
+        <constraint field="PADO" exp="" desc=""/>
+        <constraint field="PEAS" exp="" desc=""/>
+        <constraint field="PHBO" exp="" desc=""/>
+        <constraint field="PLCU" exp="" desc=""/>
+        <constraint field="PYJO" exp="" desc=""/>
+        <constraint field="SATE" exp="" desc=""/>
+        <constraint field="STPI" exp="" desc=""/>
+        <constraint field="TEBO" exp="" desc=""/>
+        <constraint field="TUNI" exp="" desc=""/>
+        <constraint field="ZOBO" exp="" desc=""/>
+        <constraint field="ZOOL" exp="" desc=""/>
+        <constraint field="ALTI" exp="" desc=""/>
+        <constraint field="ACDE" exp="" desc=""/>
+        <constraint field="ACMI" exp="" desc=""/>
+        <constraint field="BOCO" exp="" desc=""/>
+        <constraint field="BRAN" exp="" desc=""/>
+        <constraint field="CANN" exp="" desc=""/>
+        <constraint field="CRYP" exp="" desc=""/>
+        <constraint field="CULT" exp="" desc=""/>
+        <constraint field="FOEX" exp="" desc=""/>
+        <constraint field="FRAR" exp="" desc=""/>
+        <constraint field="FRBA" exp="" desc=""/>
+        <constraint field="PATU" exp="" desc=""/>
+        <constraint field="SAAR" exp="" desc=""/>
+        <constraint field="SAHE" exp="" desc=""/>
+        <constraint field="TAMA" exp="" desc=""/>
+        <constraint field="URBA" exp="" desc=""/>
+        <constraint field="pub" exp="" desc=""/>
+        <constraint field="ID" exp="" desc=""/>
+        <constraint field="X" exp="" desc=""/>
+        <constraint field="Y" exp="" desc=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="1" sortExpression="&quot;BOCO&quot;" actionWidgetStyle="dropDown">
+        <columns>
+          <column name="NOS" hidden="0" width="-1" type="field"/>
+          <column name="ACTR" hidden="0" width="-1" type="field"/>
+          <column name="CIMA" hidden="0" width="-1" type="field"/>
+          <column name="COCH" hidden="0" width="-1" type="field"/>
+          <column name="COCO" hidden="0" width="-1" type="field"/>
+          <column name="COFR" hidden="0" width="-1" type="field"/>
+          <column name="ESAS" hidden="0" width="-1" type="field"/>
+          <column name="FOMA" hidden="0" width="-1" type="field"/>
+          <column name="FRPO" hidden="0" width="-1" type="field"/>
+          <column name="GEST" hidden="0" width="-1" type="field"/>
+          <column name="HYBO" hidden="0" width="-1" type="field"/>
+          <column name="LOPU" hidden="0" width="-1" type="field"/>
+          <column name="MAMA" hidden="0" width="-1" type="field"/>
+          <column name="PADO" hidden="0" width="-1" type="field"/>
+          <column name="PEAS" hidden="0" width="-1" type="field"/>
+          <column name="PHBO" hidden="0" width="-1" type="field"/>
+          <column name="PLCU" hidden="0" width="-1" type="field"/>
+          <column name="PYJO" hidden="0" width="-1" type="field"/>
+          <column name="SATE" hidden="0" width="-1" type="field"/>
+          <column name="STPI" hidden="0" width="-1" type="field"/>
+          <column name="TEBO" hidden="0" width="-1" type="field"/>
+          <column name="TUNI" hidden="0" width="-1" type="field"/>
+          <column name="ZOBO" hidden="0" width="-1" type="field"/>
+          <column name="ZOOL" hidden="0" width="-1" type="field"/>
+          <column name="ALTI" hidden="0" width="-1" type="field"/>
+          <column name="ACDE" hidden="0" width="-1" type="field"/>
+          <column name="ACMI" hidden="0" width="-1" type="field"/>
+          <column name="BOCO" hidden="0" width="-1" type="field"/>
+          <column name="BRAN" hidden="0" width="-1" type="field"/>
+          <column name="CANN" hidden="0" width="-1" type="field"/>
+          <column name="CRYP" hidden="0" width="-1" type="field"/>
+          <column name="CULT" hidden="0" width="-1" type="field"/>
+          <column name="FOEX" hidden="0" width="-1" type="field"/>
+          <column name="FRAR" hidden="0" width="-1" type="field"/>
+          <column name="FRBA" hidden="0" width="-1" type="field"/>
+          <column name="PATU" hidden="0" width="-1" type="field"/>
+          <column name="SAAR" hidden="0" width="-1" type="field"/>
+          <column name="SAHE" hidden="0" width="-1" type="field"/>
+          <column name="TAMA" hidden="0" width="-1" type="field"/>
+          <column name="URBA" hidden="0" width="-1" type="field"/>
+          <column name="pub" hidden="0" width="-1" type="field"/>
+          <column name="ID" hidden="0" width="-1" type="field"/>
+          <column name="X" hidden="0" width="-1" type="field"/>
+          <column name="Y" hidden="0" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1">.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="ACDE"/>
+        <field editable="1" name="ACMI"/>
+        <field editable="1" name="ACTR"/>
+        <field editable="1" name="ALTI"/>
+        <field editable="1" name="BOCO"/>
+        <field editable="1" name="BRAN"/>
+        <field editable="1" name="CANN"/>
+        <field editable="1" name="CIMA"/>
+        <field editable="1" name="COCH"/>
+        <field editable="1" name="COCO"/>
+        <field editable="1" name="COFR"/>
+        <field editable="1" name="CRYP"/>
+        <field editable="1" name="CULT"/>
+        <field editable="1" name="ESAS"/>
+        <field editable="1" name="FOEX"/>
+        <field editable="1" name="FOMA"/>
+        <field editable="1" name="FRAR"/>
+        <field editable="1" name="FRBA"/>
+        <field editable="1" name="FRPO"/>
+        <field editable="1" name="GEST"/>
+        <field editable="1" name="HYBO"/>
+        <field editable="1" name="ID"/>
+        <field editable="1" name="LOPU"/>
+        <field editable="1" name="MAMA"/>
+        <field editable="1" name="NOS"/>
+        <field editable="1" name="PADO"/>
+        <field editable="1" name="PATU"/>
+        <field editable="1" name="PEAS"/>
+        <field editable="1" name="PHBO"/>
+        <field editable="1" name="PLCU"/>
+        <field editable="1" name="PYJO"/>
+        <field editable="1" name="SAAR"/>
+        <field editable="1" name="SAHE"/>
+        <field editable="1" name="SATE"/>
+        <field editable="1" name="STPI"/>
+        <field editable="1" name="TAMA"/>
+        <field editable="1" name="TEBO"/>
+        <field editable="1" name="TUNI"/>
+        <field editable="1" name="URBA"/>
+        <field editable="1" name="X"/>
+        <field editable="1" name="Y"/>
+        <field editable="1" name="ZOBO"/>
+        <field editable="1" name="ZOOL"/>
+        <field editable="1" name="pub"/>
+      </editable>
+      <labelOnTop>
+        <field name="ACDE" labelOnTop="0"/>
+        <field name="ACMI" labelOnTop="0"/>
+        <field name="ACTR" labelOnTop="0"/>
+        <field name="ALTI" labelOnTop="0"/>
+        <field name="BOCO" labelOnTop="0"/>
+        <field name="BRAN" labelOnTop="0"/>
+        <field name="CANN" labelOnTop="0"/>
+        <field name="CIMA" labelOnTop="0"/>
+        <field name="COCH" labelOnTop="0"/>
+        <field name="COCO" labelOnTop="0"/>
+        <field name="COFR" labelOnTop="0"/>
+        <field name="CRYP" labelOnTop="0"/>
+        <field name="CULT" labelOnTop="0"/>
+        <field name="ESAS" labelOnTop="0"/>
+        <field name="FOEX" labelOnTop="0"/>
+        <field name="FOMA" labelOnTop="0"/>
+        <field name="FRAR" labelOnTop="0"/>
+        <field name="FRBA" labelOnTop="0"/>
+        <field name="FRPO" labelOnTop="0"/>
+        <field name="GEST" labelOnTop="0"/>
+        <field name="HYBO" labelOnTop="0"/>
+        <field name="ID" labelOnTop="0"/>
+        <field name="LOPU" labelOnTop="0"/>
+        <field name="MAMA" labelOnTop="0"/>
+        <field name="NOS" labelOnTop="0"/>
+        <field name="PADO" labelOnTop="0"/>
+        <field name="PATU" labelOnTop="0"/>
+        <field name="PEAS" labelOnTop="0"/>
+        <field name="PHBO" labelOnTop="0"/>
+        <field name="PLCU" labelOnTop="0"/>
+        <field name="PYJO" labelOnTop="0"/>
+        <field name="SAAR" labelOnTop="0"/>
+        <field name="SAHE" labelOnTop="0"/>
+        <field name="SATE" labelOnTop="0"/>
+        <field name="STPI" labelOnTop="0"/>
+        <field name="TAMA" labelOnTop="0"/>
+        <field name="TEBO" labelOnTop="0"/>
+        <field name="TUNI" labelOnTop="0"/>
+        <field name="URBA" labelOnTop="0"/>
+        <field name="X" labelOnTop="0"/>
+        <field name="Y" labelOnTop="0"/>
+        <field name="ZOBO" labelOnTop="0"/>
+        <field name="ZOOL" labelOnTop="0"/>
+        <field name="pub" labelOnTop="0"/>
+      </labelOnTop>
+      <widgets/>
+      <previewExpression>COALESCE( "ID", '&lt;NULL>' )</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer refreshOnNotifyMessage="" maxScale="0" autoRefreshEnabled="0" labelsEnabled="0" minScale="1e+8" simplifyDrawingHints="1" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" simplifyAlgorithm="0" type="vector" wkbType="Point" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories" readOnly="0" geometry="Point" simplifyDrawingTol="1" simplifyMaxScale="1">
+      <extent>
+        <xmin>316359.21875</xmin>
+        <ymin>7640479</ymin>
+        <xmax>362030.9375</xmax>
+        <ymax>7675020</ymax>
+      </extent>
+      <id>zoizos_a86d2e0c_89d2_437c_92c1_c7f5200f323a</id>
+      <datasource>./zoizos/zoizos.gpkg|layername=zoizos_974</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>zoizos zoizos_974</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=40 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>942</srsid>
+          <srid>2975</srid>
+          <authid>EPSG:2975</authid>
+          <description>RGR92 / UTM zone 40S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol clip_to_extent="1" name="0" type="marker" alpha="1" force_rhr="0">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="145,82,45,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="fid">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NOS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ACTR">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CIMA">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COCH">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COCO">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COFR">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ESAS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FOMA">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FRPO">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="GEST">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="HYBO">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LOPU">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MAMA">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PADO">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PEAS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PHBO">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PLCU">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PYJO">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SATE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="STPI">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TEBO">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TUNI">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ZOBO">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ZOOL">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ALTI">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ACDE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ACMI">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="BOCO">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="BRAN">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CANN">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CRYP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CULT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FOEX">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FRAR">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FRBA">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PATU">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SAAR">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SAHE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TAMA">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="URBA">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="pub">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ID">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="X">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Y">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="fid" name="" index="0"/>
+        <alias field="NOS" name="" index="1"/>
+        <alias field="ACTR" name="" index="2"/>
+        <alias field="CIMA" name="" index="3"/>
+        <alias field="COCH" name="" index="4"/>
+        <alias field="COCO" name="" index="5"/>
+        <alias field="COFR" name="" index="6"/>
+        <alias field="ESAS" name="" index="7"/>
+        <alias field="FOMA" name="" index="8"/>
+        <alias field="FRPO" name="" index="9"/>
+        <alias field="GEST" name="" index="10"/>
+        <alias field="HYBO" name="" index="11"/>
+        <alias field="LOPU" name="" index="12"/>
+        <alias field="MAMA" name="" index="13"/>
+        <alias field="PADO" name="" index="14"/>
+        <alias field="PEAS" name="" index="15"/>
+        <alias field="PHBO" name="" index="16"/>
+        <alias field="PLCU" name="" index="17"/>
+        <alias field="PYJO" name="" index="18"/>
+        <alias field="SATE" name="" index="19"/>
+        <alias field="STPI" name="" index="20"/>
+        <alias field="TEBO" name="" index="21"/>
+        <alias field="TUNI" name="" index="22"/>
+        <alias field="ZOBO" name="" index="23"/>
+        <alias field="ZOOL" name="" index="24"/>
+        <alias field="ALTI" name="" index="25"/>
+        <alias field="ACDE" name="" index="26"/>
+        <alias field="ACMI" name="" index="27"/>
+        <alias field="BOCO" name="" index="28"/>
+        <alias field="BRAN" name="" index="29"/>
+        <alias field="CANN" name="" index="30"/>
+        <alias field="CRYP" name="" index="31"/>
+        <alias field="CULT" name="" index="32"/>
+        <alias field="FOEX" name="" index="33"/>
+        <alias field="FRAR" name="" index="34"/>
+        <alias field="FRBA" name="" index="35"/>
+        <alias field="PATU" name="" index="36"/>
+        <alias field="SAAR" name="" index="37"/>
+        <alias field="SAHE" name="" index="38"/>
+        <alias field="TAMA" name="" index="39"/>
+        <alias field="URBA" name="" index="40"/>
+        <alias field="pub" name="" index="41"/>
+        <alias field="ID" name="" index="42"/>
+        <alias field="X" name="" index="43"/>
+        <alias field="Y" name="" index="44"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="fid" applyOnUpdate="0" expression=""/>
+        <default field="NOS" applyOnUpdate="0" expression=""/>
+        <default field="ACTR" applyOnUpdate="0" expression=""/>
+        <default field="CIMA" applyOnUpdate="0" expression=""/>
+        <default field="COCH" applyOnUpdate="0" expression=""/>
+        <default field="COCO" applyOnUpdate="0" expression=""/>
+        <default field="COFR" applyOnUpdate="0" expression=""/>
+        <default field="ESAS" applyOnUpdate="0" expression=""/>
+        <default field="FOMA" applyOnUpdate="0" expression=""/>
+        <default field="FRPO" applyOnUpdate="0" expression=""/>
+        <default field="GEST" applyOnUpdate="0" expression=""/>
+        <default field="HYBO" applyOnUpdate="0" expression=""/>
+        <default field="LOPU" applyOnUpdate="0" expression=""/>
+        <default field="MAMA" applyOnUpdate="0" expression=""/>
+        <default field="PADO" applyOnUpdate="0" expression=""/>
+        <default field="PEAS" applyOnUpdate="0" expression=""/>
+        <default field="PHBO" applyOnUpdate="0" expression=""/>
+        <default field="PLCU" applyOnUpdate="0" expression=""/>
+        <default field="PYJO" applyOnUpdate="0" expression=""/>
+        <default field="SATE" applyOnUpdate="0" expression=""/>
+        <default field="STPI" applyOnUpdate="0" expression=""/>
+        <default field="TEBO" applyOnUpdate="0" expression=""/>
+        <default field="TUNI" applyOnUpdate="0" expression=""/>
+        <default field="ZOBO" applyOnUpdate="0" expression=""/>
+        <default field="ZOOL" applyOnUpdate="0" expression=""/>
+        <default field="ALTI" applyOnUpdate="0" expression=""/>
+        <default field="ACDE" applyOnUpdate="0" expression=""/>
+        <default field="ACMI" applyOnUpdate="0" expression=""/>
+        <default field="BOCO" applyOnUpdate="0" expression=""/>
+        <default field="BRAN" applyOnUpdate="0" expression=""/>
+        <default field="CANN" applyOnUpdate="0" expression=""/>
+        <default field="CRYP" applyOnUpdate="0" expression=""/>
+        <default field="CULT" applyOnUpdate="0" expression=""/>
+        <default field="FOEX" applyOnUpdate="0" expression=""/>
+        <default field="FRAR" applyOnUpdate="0" expression=""/>
+        <default field="FRBA" applyOnUpdate="0" expression=""/>
+        <default field="PATU" applyOnUpdate="0" expression=""/>
+        <default field="SAAR" applyOnUpdate="0" expression=""/>
+        <default field="SAHE" applyOnUpdate="0" expression=""/>
+        <default field="TAMA" applyOnUpdate="0" expression=""/>
+        <default field="URBA" applyOnUpdate="0" expression=""/>
+        <default field="pub" applyOnUpdate="0" expression=""/>
+        <default field="ID" applyOnUpdate="0" expression=""/>
+        <default field="X" applyOnUpdate="0" expression=""/>
+        <default field="Y" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="fid" unique_strength="1" notnull_strength="1" constraints="3" exp_strength="0"/>
+        <constraint field="NOS" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ACTR" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="CIMA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="COCH" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="COCO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="COFR" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ESAS" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="FOMA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="FRPO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="GEST" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="HYBO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="LOPU" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="MAMA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PADO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PEAS" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PHBO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PLCU" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PYJO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="SATE" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="STPI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="TEBO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="TUNI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ZOBO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ZOOL" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ALTI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ACDE" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ACMI" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="BOCO" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="BRAN" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="CANN" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="CRYP" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="CULT" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="FOEX" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="FRAR" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="FRBA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="PATU" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="SAAR" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="SAHE" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="TAMA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="URBA" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="pub" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="ID" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="X" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+        <constraint field="Y" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="fid" exp="" desc=""/>
+        <constraint field="NOS" exp="" desc=""/>
+        <constraint field="ACTR" exp="" desc=""/>
+        <constraint field="CIMA" exp="" desc=""/>
+        <constraint field="COCH" exp="" desc=""/>
+        <constraint field="COCO" exp="" desc=""/>
+        <constraint field="COFR" exp="" desc=""/>
+        <constraint field="ESAS" exp="" desc=""/>
+        <constraint field="FOMA" exp="" desc=""/>
+        <constraint field="FRPO" exp="" desc=""/>
+        <constraint field="GEST" exp="" desc=""/>
+        <constraint field="HYBO" exp="" desc=""/>
+        <constraint field="LOPU" exp="" desc=""/>
+        <constraint field="MAMA" exp="" desc=""/>
+        <constraint field="PADO" exp="" desc=""/>
+        <constraint field="PEAS" exp="" desc=""/>
+        <constraint field="PHBO" exp="" desc=""/>
+        <constraint field="PLCU" exp="" desc=""/>
+        <constraint field="PYJO" exp="" desc=""/>
+        <constraint field="SATE" exp="" desc=""/>
+        <constraint field="STPI" exp="" desc=""/>
+        <constraint field="TEBO" exp="" desc=""/>
+        <constraint field="TUNI" exp="" desc=""/>
+        <constraint field="ZOBO" exp="" desc=""/>
+        <constraint field="ZOOL" exp="" desc=""/>
+        <constraint field="ALTI" exp="" desc=""/>
+        <constraint field="ACDE" exp="" desc=""/>
+        <constraint field="ACMI" exp="" desc=""/>
+        <constraint field="BOCO" exp="" desc=""/>
+        <constraint field="BRAN" exp="" desc=""/>
+        <constraint field="CANN" exp="" desc=""/>
+        <constraint field="CRYP" exp="" desc=""/>
+        <constraint field="CULT" exp="" desc=""/>
+        <constraint field="FOEX" exp="" desc=""/>
+        <constraint field="FRAR" exp="" desc=""/>
+        <constraint field="FRBA" exp="" desc=""/>
+        <constraint field="PATU" exp="" desc=""/>
+        <constraint field="SAAR" exp="" desc=""/>
+        <constraint field="SAHE" exp="" desc=""/>
+        <constraint field="TAMA" exp="" desc=""/>
+        <constraint field="URBA" exp="" desc=""/>
+        <constraint field="pub" exp="" desc=""/>
+        <constraint field="ID" exp="" desc=""/>
+        <constraint field="X" exp="" desc=""/>
+        <constraint field="Y" exp="" desc=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns>
+          <column name="fid" hidden="0" width="-1" type="field"/>
+          <column name="NOS" hidden="0" width="-1" type="field"/>
+          <column name="ACTR" hidden="0" width="-1" type="field"/>
+          <column name="CIMA" hidden="0" width="-1" type="field"/>
+          <column name="COCH" hidden="0" width="-1" type="field"/>
+          <column name="COCO" hidden="0" width="-1" type="field"/>
+          <column name="COFR" hidden="0" width="-1" type="field"/>
+          <column name="ESAS" hidden="0" width="-1" type="field"/>
+          <column name="FOMA" hidden="0" width="-1" type="field"/>
+          <column name="FRPO" hidden="0" width="-1" type="field"/>
+          <column name="GEST" hidden="0" width="-1" type="field"/>
+          <column name="HYBO" hidden="0" width="-1" type="field"/>
+          <column name="LOPU" hidden="0" width="-1" type="field"/>
+          <column name="MAMA" hidden="0" width="-1" type="field"/>
+          <column name="PADO" hidden="0" width="-1" type="field"/>
+          <column name="PEAS" hidden="0" width="-1" type="field"/>
+          <column name="PHBO" hidden="0" width="-1" type="field"/>
+          <column name="PLCU" hidden="0" width="-1" type="field"/>
+          <column name="PYJO" hidden="0" width="-1" type="field"/>
+          <column name="SATE" hidden="0" width="-1" type="field"/>
+          <column name="STPI" hidden="0" width="-1" type="field"/>
+          <column name="TEBO" hidden="0" width="-1" type="field"/>
+          <column name="TUNI" hidden="0" width="-1" type="field"/>
+          <column name="ZOBO" hidden="0" width="-1" type="field"/>
+          <column name="ZOOL" hidden="0" width="-1" type="field"/>
+          <column name="ALTI" hidden="0" width="-1" type="field"/>
+          <column name="ACDE" hidden="0" width="-1" type="field"/>
+          <column name="ACMI" hidden="0" width="-1" type="field"/>
+          <column name="BOCO" hidden="0" width="-1" type="field"/>
+          <column name="BRAN" hidden="0" width="-1" type="field"/>
+          <column name="CANN" hidden="0" width="-1" type="field"/>
+          <column name="CRYP" hidden="0" width="-1" type="field"/>
+          <column name="CULT" hidden="0" width="-1" type="field"/>
+          <column name="FOEX" hidden="0" width="-1" type="field"/>
+          <column name="FRAR" hidden="0" width="-1" type="field"/>
+          <column name="FRBA" hidden="0" width="-1" type="field"/>
+          <column name="PATU" hidden="0" width="-1" type="field"/>
+          <column name="SAAR" hidden="0" width="-1" type="field"/>
+          <column name="SAHE" hidden="0" width="-1" type="field"/>
+          <column name="TAMA" hidden="0" width="-1" type="field"/>
+          <column name="URBA" hidden="0" width="-1" type="field"/>
+          <column name="pub" hidden="0" width="-1" type="field"/>
+          <column name="ID" hidden="0" width="-1" type="field"/>
+          <column name="X" hidden="0" width="-1" type="field"/>
+          <column name="Y" hidden="0" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression>"fid"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="zoizos20150426215945254"/>
+    <layer id="REU_adm020150426220028461"/>
+    <layer id="mnt5m_pente20150525192312172"/>
+    <layer id="pts_stoc_livraison20170621160837316"/>
+    <layer id="zoizos_a86d2e0c_89d2_437c_92c1_c7f5200f323a"/>
+  </layerorder>
+  <properties>
+    <Digitizing>
+      <AvoidIntersectionsList type="QStringList"/>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+      <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+      </LayerSnapToList>
+      <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
+        <value>disabled</value>
+      </LayerSnappingEnabledList>
+      <LayerSnappingList type="QStringList">
+        <value>zoizos20150426215945254</value>
+        <value>REU_adm020150426220028461</value>
+      </LayerSnappingList>
+      <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+        <value>0.000000</value>
+      </LayerSnappingToleranceList>
+      <LayerSnappingToleranceUnitList type="QStringList">
+        <value>0</value>
+        <value>0</value>
+      </LayerSnappingToleranceUnitList>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+    </Digitizing>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+    </Gui>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <PAL>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <CandidatesLinePerCM type="double">5</CandidatesLinePerCM>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <CandidatesPolygonPerCM type="double">2.5</CandidatesPolygonPerCM>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <PlacementEngineVersion type="int">0</PlacementEngineVersion>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <SpatialRefSys>
+      <ProjectCRSID type="int">942</ProjectCRSID>
+      <ProjectCRSProj4String type="QString">+proj=utm +zone=40 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:2975</ProjectCrs>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+  </properties>
+  <visibility-presets/>
+  <transformContext>
+    <srcDest destTransform="+towgs84=0,0,0" dest="EPSG:2975" sourceTransform="" source="EPSG:4326"/>
+  </transformContext>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <links/>
+    <author></author>
+    <creation></creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+</qgis>

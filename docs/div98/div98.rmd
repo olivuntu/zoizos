@@ -1,0 +1,33 @@
+---
+title: "Bird community assembly along an elevation profile on a remote tropical volcanic island"
+author: Flores O.
+date:
+institute: University of Reunion
+fontsize: 11pt
+lang: english
+numbered: true
+geometry: margin=2.5cm
+newcom:
+    - especes
+    - newcom
+tables: true
+biblatex: true
+bibliography:
+    - ../publis.bib
+    - ../974.bib
+link-citations: true
+keywords:
+graphicspath: ../figures/
+abstract: "Although biological invasions are one of the most important changes in ecological dynamic, they have been rarely investigated along elevational gradients. The objective of this study was to compare the distributions of exotic versus native birds on a same broad elevational gradient. Field studies were conducted on the leeward side of Reunion Island (Mascarene Archipelago, Western Indian Ocean) between 20 and 2880 m at 363 sampling points. Species richness and abundances of bird species were surveyed during the nesting season using 20 min count at each point. Mean elevational position and elevational amplitude were measured for each species and a Mean Distribution Index was computed as the number of bird species having their mean elevation within each 100 m elevational band. The data show that (1) the elevational variation of native species richness is hump-shaped, whereas the richness of exotic bird species does not vary in the first half of the gradient; (2) the elevational amplitude and maximum elevation do not differ significantly between exotic and native birds, but the mean and minimum elevations are higher for native birds; and (3) the most suitable vegetation types are found in the ‘rural landscapes’ belt for the exotic bird communities, and in the higher belt of ‘forest and pastures’ for the native ones. Even if history can appear too short to permit niche expansion of the more recent introduced species, we can underline the exotic species preference for anthropogenic landscapes and their large amplitude in elevation."
+---
+
+
+```{r set-options,echo = F, cache = F}
+opts_chunk$set(cache = T, eval = T, echo = F, cache.path = '../cache/', fig.path = paste0('../figures/', flow$doc, '-'), fig.width = 6, fig.height = 6, fig.show = 'hold', external = TRUE, message = F, warning = F, out.width = '\\linewidth', fig.cap = NULL)
+read_chunk(paste('code',flow$doc,'figures.r',sep="/"))
+knit_hooks$set(grpar = function(before, options, envir) {
+    if (before)
+        par(mar=c(3,3,2,1),mgp = c(1,0.2,0))
+})
+```
+

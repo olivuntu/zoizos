@@ -1,0 +1,34 @@
+Species & Order & Family & Mass (g) & Size (cm) & Status & RLI
+Acridotheres tristis & Passeriformes & Sturnidae & 82 – 134 & 23 – 29 & E & LC
+\begin{table}
+\caption{Bird species list}
+\begin{tabular}{>{\it}ccccccc}
+\hline
+Species & Order & Family & Mass (g) & Size (cm) & Status & RLI \\
+\hline
+Circus maillardi & Accipitriformes & Accipitridae & 50 & 650 – 1000 & R  & EN 
+Collocalia francica & Apodiformes & Apodidae & 7 – 13,3 &  & M & NT
+Coturnix chinensis & Galliformes & Phasianidae & 31 – 41 & 12 – 15 & E & LC
+Coturnix coturnix & Galliformes & Phasianidae & 16 & 70 - 135 & E & LC
+Estrilda astrild & Passeriformes & Estrildidae & 7 – 8 & 10 & E & LC
+Foudia madagascariensis & Passeriformes & Ploceidae & 13 & 17 – 19 & E & LC
+Francolinus pondicerianus & Galliformes & Phasianidae & 200 - 340 & 30 - 32 & E & LC
+Geopelia striata & Columbiformes & Columbidae &  & 20 & E & LC
+Hypsipetes borbonicus & Passeriformes & Pycnonotidae & 22 & 51 - 57 & R  & LC
+Lonchura punctata & Passeriformes & Estrildidae & 11 & 12 – 15 & E & LC
+Margaroperdrix madagascariensis & Galliformes & Phasianidae &  & 24 - 26 & N & LC
+Passer domesticus & Passeriformes & Passeridae & 26 - 32 & 14 - 16 & E & LC
+Perdicula asiatica & Galliformes & Phasianidae & 57 - 82 & 17 & N & LC
+Phedina borbonica & Passeriformes & Hirundinidae &  & 13,5 & E & LC
+Ploceus cucullatus & Passeriformes & Ploceidae & 17 & 32 – 45 & E & LC
+Pycnonotus jocosus & Passeriformes & Pycnonotidae & 20 & 23 – 42 & E & LC
+Saxicola tectes & Passeriformes & Muscicapidae & 12,5 & 10,5 – 15 & R  & LC
+Streptopelia picturata & Columbiformes & Columbidae & 28 & 145 – 255 & N & LC 
+Terpsiphone bourbonnensis bourbonnensis & Passeriformes & Monarchidae & 15 & 10 – 12 & M (R)  & LC
+Turnix nigricollis & Turniciformes & Turnicidae &  & 13 & N & LC 
+Zosterops borbonicus borbonicus & Passeriformes & Zosteropidae & 10 & 7 – 8 & M (R)  & LC
+Zosterops olivaceus & Passeriformes & Zosteropidae & 10,5 & 9 – 10 & R  & LC
+\hline
+\end{tabular}
+\end{table}
+

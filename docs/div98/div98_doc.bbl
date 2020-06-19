@@ -1,0 +1,136 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{cadet_vegetation_1980}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CT}{%
+         family={Cadet},
+         familyi={C\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cazal}%
+    }
+    \strng{namehash}{CT1}
+    \strng{fullhash}{CT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{La végétation de l’île de la Réunion. Etude
+  phytoécologique et phytosociologique.}
+    \field{year}{1980}
+  \endentry
+
+  \entry{Cadet1974}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CT}{%
+         family={Cadet},
+         familyi={C\bibinitperiod},
+         given={Th.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CT2}
+    \strng{fullhash}{CT2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1007/BF02389717
+    \endverb
+    \field{issn}{0042-3106}
+    \field{number}{2}
+    \field{pages}{121\bibrangedash 130}
+    \field{title}{\'{E}tude sur la v\'{e}g\'{e}tation des hautes altitudes de
+  l'\^{i}le de la R\'{e}union {(Oc\'{e}an} Indien)}
+    \verb{url}
+    \verb http://www.springerlink.com/content/04622w43t5076725/
+    \endverb
+    \field{volume}{29}
+    \verb{file}
+    \verb Cadet1974_Etude_sur_la_vegetation.pdf:journaux/plant_ecology/Cadet197
+    \verb 4_Etude_sur_la_vegetation.pdf:PDF
+    \endverb
+    \field{journaltitle}{Vegetatio}
+    \field{year}{1974}
+  \endentry
+
+  \entry{Gotelli2000}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GN}{%
+         family={Gotelli},
+         familyi={G\bibinitperiod},
+         given={N.J.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{null models;coexistence;association;patterns}
+    \strng{namehash}{GN1}
+    \strng{fullhash}{GN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{9}
+    \field{pages}{2606\bibrangedash 2621}
+    \field{title}{Null model analysis of species co-occurrence patterns}
+    \field{volume}{81}
+    \verb{file}
+    \verb Gotelli2000_null_model_analysis_of_species_co-occurrence_patterns.pdf
+    \verb :journaux\\ecology\\Gotelli2000_null_model_analysis_of_species_co-occ
+    \verb urrence_patterns.pdf:PDF;Gotelli2000_swap_and_fill_algorithms.pdf:jou
+    \verb rnaux\\oecologia\\Gotelli2000_swap_and_fill_algorithms.pdf:PDF;Gotell
+    \verb i2000_null_model_analysis_of_species_co-occurrence_patterns.pdf:journ
+    \verb aux/ecology/Gotelli2000_null_model_analysis_of_species_co-occurrence_
+    \verb patterns.pdf:PDF;Gotelli2000_swap_and_fill_algorithms.pdf:journaux/oe
+    \verb cologia/Gotelli2000_swap_and_fill_algorithms.pdf:PDF
+    \endverb
+    \field{journaltitle}{Ecology}
+    \field{year}{2000}
+  \endentry
+
+  \entry{Raunet1991}{book}{}
+    \name{author}{1}{}{%
+      {{hash=RM}{%
+         family={Raunet},
+         familyi={R\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{CIRAD}}%
+    }
+    \strng{namehash}{RM1}
+    \strng{fullhash}{RM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{isbn}{2901987346}
+    \field{title}{Le milieu physique et les sols de l'île de la Réunion:
+  conséquences pour la mise en valeur agricole}
+    \field{year}{1991}
+  \endentry
+\enddatalist
+\endinput

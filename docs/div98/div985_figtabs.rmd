@@ -1,0 +1,97 @@
+
+
+# Figure legends
+
+Figure [@Fig:boxalti]: Box-and-whisker plots indicating the median, first and third quartiles and values outside inter-quartile range of elevations where species were detected. Species are sorted by order of median evelation. Blue indicates native species, and red indicate exotic species. Species are labelled with the first two letters of the genus and species names (see [@Tbl:species]).
+
+Figure [@Fig:boxrange]: Four features of species distributions with respect to elevation in native and exotic species : (a) weigthed mid elevation point (average elevation where the species was detected weighted by number occurences), (b) elevation amplitude (difference between highest and lowest elevation of detection), (c) minimum elevation where the species was detected and (d) maximal elevation of detection. Box-and-whisker plots indicate the median, first and third quartiles and values outside inter-equartile range. Symbols indicate individual values ($n=22$ species), open symbols indicate species with less than 5 records in dataset ($n=3$ species, see [@Tbl:era]).
+
+Figure [@Fig:Sgam]: Elevation patterns of species richness : (a) total and (b) according to species status, native or exotic. Richness is calculated here per 100-m elevation band as the number of species detected within the band. Dotted lines indicate generalized additive models fits (GAM) with colored bands showing the 95\% confidence interval on estimated richness. 
+
+Figure [@Fig:Snul]: Comparison between observed richness (dots) within 100-m elevation bands for native (a. \& c.) and exotic (b. \& d.) birds and expected species richness under two different null models that simulate random species assemblages (95\%-confidence band). Green lines:  null model with fixed site capcity, blue lines: null model with random site capacity (equally suitable sites hypothesis). In both models, species frequencies in the dataset were preserved during simulation ($n=2000$).
+
+\newpage
+
+# Figures
+	
+\begin{figure}
+\centering
+\begin{tabular}{cc}
+(a) & (b) \\
+```{r boxwmalt, out.width = '0.5\\textwidth'}
+``` 
+
+&
+```{r boxampl, out.width = '0.5\\textwidth'}
+``` 
+
+\\
+(c) & (d) \\
+```{r boxmin, out.width = '0.5\\textwidth'}
+``` 
+
+&
+```{r boxmax, out.width = '0.5\\textwidth'}
+``` 
+
+\end{tabular}
+\caption{\label{fig:boxrange}}
+\end{figure}
+
+```{r boxalti, fig.cap = ' '}
+```
+
+\clearpage
+
+\begin{figure}
+\hspace{-2cm}
+\begin{tabular}{cc}
+a& b\\
+```{r Stot, out.width = '0.5\\linewidth'}
+``` 
+&
+```{r Snatexo, out.width = '0.5\\linewidth'}
+```
+
+\end{tabular}
+\caption{\label{fig:Sgam}}
+\end{figure}
+
+\clearpage
+
+\begin{figure}
+\hspace{-2cm}
+\begin{tabular}{cc}
+```{r Snatnul, out.width = '0.5\\linewidth'}
+```
+
+&
+```{r Sexonul, out.width = '0.5\\linewidth'}
+```
+
+\end{tabular}
+\caption{\label{fig:Snul}}
+\end{figure}
+
+
+\clearpage
+
+# Tables 
+
+
+# Supporting information
+
+\input{../tables/zoizos_era}
+
+
+\clearpage
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\setcounter{figure}{0}
+
+\renewcommand{\thetable}{S\arabic{table}}
+\setcounter{table}{0}
+\input{../tables/species_zoizos}
+
+
+

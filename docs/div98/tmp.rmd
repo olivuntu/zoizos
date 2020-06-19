@@ -1,0 +1,230 @@
+# Material and methods
+
+## Studied area
+
+Reunion Island is part of the Mascarene volcanic archipelago, situated
+in the Western Indian Ocean (55°30’ E and 21°05’ S)(Fig. 1). This
+oceanic island appeared three million years ago. In the centre of the
+island, a plateau (Plaine des Caffres, $\approx$2000 m) is flanked by
+two volcanoes (Piton de la Fournaise, 2631 m; Piton des Neiges, 3069 m),
+the sides of which slope steeply towards the sea. There is a very steep
+climatic gradient: the average minimum ground temperature falls below
+0°C above 1500 m in August, above 1800 m from June to October, and above
+2300 m all year round; at the highest point, the temperature ranges from
+-10°C to +26°C [@Cadet1974; @Raunet1991]. The studied area, located on
+the leeward side of the island had a slope of about 0.15 m per m and an
+annual rainfall ranging from 500 mm at sea level to 2000 mm on the
+highest mountain slopes [@Raunet1991]. The land is roughly organized
+through a land use gradient into a succession of elevational belts
+[@Cadet1980] urbanised areas (0-50 m a.s.l.), herbaceous savannah
+(50-300 m), sugarcane monoculture (300-800 m), rural landscapes with
+diversified crops (800-1200 m), primary forest mixed with pastures and
+planted forests (1200-1800 m), heathlands dominated by ericaceous plants
+(1800-2600 m), and bare soils with a very sparse vegetation of
+herbaceous species (2600-3069 m) (Fig. ??). Above 1200 m, about 60
+
+## Sampling
+
+The transect was sampled through one survey during the breeding season
+(December, 1997 - April, 1998), using 363 sample points spread along an
+elevational gradient from 20 m to 2880 m (Fig. ??). Further prospecting
+between 2880 and 3069 m (Piton des Neiges) revealed no bird presence.
+Sea birds nest at these high altitudes but were not considered in the
+study. This was due to of a lack of vegetation, except for scarce
+amounts of native herbs and weeds. Sampling points were equally
+distributed all along the elevational gradient, with a mean elevational
+distance of 8 m between two successive elevations, and a distance of at
+least 250 m between two successive count points, a mean sampling
+pressure of 12.7 count points per 100 m elevational band, and covering
+the overall diversity of vegetation types. Depressions, ridges and mires
+were avoided in order to avoid extremely wet or dry places. We also
+avoided places too close to feeding troughs in grasslands as they
+attract granivorous bird species. We assume that most of the birds were
+sampled near their nesting sites. In order to limit sampling bias, the
+different ecosystems found at each 100 m elevational band were surveyed
+so as not to miss individual bird species specific to individual
+ecosystems.
+
+## Data analysis
+
+We calculated the weighted mid-point of species distribution as the
+average of all elevations where a species was detected weighted by the
+number of times it was detected. We also compare species maximal and
+minimal elevation where observed along the gradient, and amplitude in
+elevation range. We use the word elevation instead of altitude, as
+elevation is meters above sea level where altitude is meters above
+ground.
+
+We compared observed species richness in the two groups of bird species
+(native and exotic) to two different nul models based on random
+permutations of the original dataset [@Gotelli2000]. In both models,
+species overall abundance, that is the total number of records for each
+species, was preserved in each permutation, in order to account for
+observed differences in species commonness and detectability. The main
+difference between the two nul models was in the treatment of site
+carrying capacity of birds diversity, which under equilibrium hypothesis
+can be estimated as the total numbers of individuals locally. In the
+first nul model (N1), sites are considered as equally suitable for
+birds. In this case, the randomization suppresses any structure that
+exists in the data due to relationships between carying capacity and
+environment (here elevation) in a broad sense. The randomized pattern
+obtained mimics the distribution of species richness not accounting for
+those relationships. In the second nul model (N2), the carying capacity
+of sites, that is local species richness, was preserved by the
+randomization procedure. This model holds account for differences in
+sites to support bird abundance in relation with habitat carrying
+capacity. In this case, the randomized pattern obtained takes into
+account both species commonness and site suitability. The total number
+of individuals observed locally is preserved and species abundance in
+the dataset are preserved, but individuals and samples are randomized
+across sites. For each model, we performed a number of permutations
+($n=1999$) to obtain 95-% confidence intervals on simulated species
+richness.
+
+# Results
+
+Twenty-two bird species were recorded over the 363 sampling points, with
+a mean of species per point and species per 100-m elevational band along
+the gradient. Fourteen species were exotic and eight native (Table
+\[species\]). The number of records varied widely across species between
+1 for two species (*,* ) and 268 for ** (mean: $\pm$ s.d.: , Fig.
+\[boxalti\]).
+
+Amplitudes in elevational range were high. Elevational amplitude
+exceeded 2000 m for five species and 1000 m for 15 species (Table 1).
+The largest elevational amplitude measured in native species was for
+*Zosterops borbonicus* (92 % of the gradient) and for *Acridotheres
+tristis* in exotic species (83 %) . The lowest elevational amplitude
+measured in native species was registered for *Circus maillardi* (20 %)
+and for *Perdicula asiatica* in exotic species (8 %). The distribution
+of weighted mid-points, that is the weighted mean of elevations where a
+species occurs along the gradient, was highly concentrated between 1000
+and 1500 m, with the exception of three exotic species (Fig.
+\[boxrange\]). The weighted mid-point and minimum elevation were however
+higher in native species ($p=0.034$ and $p=0.024$). By contrast,
+elevational amplitude and maximum elevation did not differ significantly
+between the two groups of species ($p=0.534$ and $p=0.254$ respectively,
+Fig. \[boxrange\]). No difference in the variability of species
+distribution was observed across the two groups: Bartlett test’s of
+variance homogeneity showed that the variability was similar in the two
+groups for the four tested variables.
+
+The total species richness observed within 100-m elevation bands varied
+between 2 and 19 (10.4$\pm$5.5, Fig. \[Sgam\].a). Total richness showed
+a unimodal mid-elevational peak between 1000 and 1200 m. However, the
+pattern of species richness differed significantly between exotic and
+native species with increasing elevation (Fig. \[Sgam\]). Species
+richness varied between 0 and 7 for native birds (3.5$\pm$2.2), and
+between 1 and 12 (6.9$\pm$3.9) for exotic birds (Fig. \[Sgam\].b).
+Species richness showed different elevational patterns across the two
+groups. Species richness of native birds showed a unimodal
+mid-elevational peak around 1200 m, whereas richness for exotic birds
+species showed a low-elevation plateau with a small mid-peak also around
+1200 m. Exotic species were more numerous than native birds up to
+mid-elevation, whereas native species were more numerous at higher
+altitudes (Fig. \[Sgam\].b). According to richness patterns, three zones
+could be defined: (1) from 0 to 900 m, there was a significant
+difference between exotic and native species, both in the number of
+species contacted and in their variation pattern, as native species
+increased with the elevational gradient from two to seven while the
+exotic ones remained at a high level (around 9 species ); (2) from 1000
+to 2000 m, richness of both exotic and native species presented a peak
+(around 9 and 6 species, respectively); (3) from 2000 to 3000 m,
+richness was higher in native species while exotic species were barely
+present.
+
+In order to explore species co-occurence according to their status, we
+compared species richness to random patterns obtained by simulation.
+Values occurring within the simulated 95% confidence band for the random
+pattern indicated elevation bands where species richness was not
+statistically different from random patterns of species assemblage (Fig.
+\[Snul\]). In both groups, null patterns showed higher variability at
+low and high elevation when sites were all considered as equally
+suitable (randomized total abundance), whereas null patterns were more
+constrained when the total abundance observed at each site was kept
+constant (site capacity hypothesis). All models showed mid-elevation
+peaks however less pronounced under the site capacity hypothesis.
+
+Native species richness was significantly lower than random expectations
+at low elevation for both null models (Fig. \[Snul\].a). This finding
+indicates depauperate communities where native species occur less
+frequently than expected by chance. From 900 m above, the observed
+pattern in native species richness overall supported more the site
+capacity hypothesis Regarding exotic birds, species richness was lower
+than expected by chance above 1500 m high (Fig. \[Snul\].b). This result
+indicates that exotic species in high elevation bird communities are in
+low numbers compared to the site capacity. At low to mid altitude, the
+observed pattern in exotic species richness was closer to the confidence
+interval of the null model without constraint on site capacity (equally
+suitable hypothesis). The site capacity hypothesis generated higher than
+observed numbers of exotic species.
+
+# Discussion
+
+# Tables
+
+# Figure legends
+
+Figure \[boxalti\]: Box-and-whisker plots indicating the median, first
+and third quartiles and values outside inter-quartile range of
+elevations where species were detected. Species are sorted by order of
+median evelation. Blue indicates native species, , and red exindicate
+exotic species. Species are labelled with the first two letters of the
+genus and species names (see Table \[species\]).
+
+Figure \[boxrange\]: Four features of species distributions with respect
+to elevation in native and exotic species : (a) weigthed mid elevation
+point (average elevation where the species was detected weighted by
+number occurences), (b) elevation amplitude (difference between highest
+and lowest elevation of detection), (c) minimum elevation where the
+species was detected and (d) maximal elevation of detection.
+Box-and-whisker plots indicate the median, first and third quartiles and
+values outside inter-quartile range. Symbols indicate individual values
+($n=22$ species), open symbols indicate species with less than 5 records
+in dataset ($n=3$ species, see Table \[era\]).
+
+Figure \[Sgam\]: Elevation patterns of species richness : (a) total and
+(b) according to species status, native or exotic. Richness is
+calculated here per 100-m elevation band as the number of species
+detected within the band. Dotted lines indicate generalized additive
+models fits (GAM) with colored bands showing the 95% confidence interval
+on estimated richness.
+
+Figure \[Snul\]: Comparison between observed richness (dots) within
+100-m elevation bands for native (a. & c.) and exotic (b. & d.) birds
+and expected species richness under two different null models that
+simulate random species assemblages (95%-confidence band). Green lines:
+null model with fixed site capcity, blue lines: null model with random
+site capacity (equally suitable sites hypothesis). In both models,
+species frequencies in the dataset were preserved during simulation
+($n=2000$).
+
+# Figures
+
+  ------------------------------------------------ -----------------------------------------------
+                        (a)                                              (b)
+   &lt;&lt;boxwmalt,echo=F,cache=T,out.width=’0.5  
+               textwidth’&gt;&gt;= @                &lt;&lt;boxampl,echo=F,cache=T,out.width=’0.5
+               textwidth’&gt;&gt;= @               
+                        (c)                                              (d)
+    &lt;&lt;boxmin,echo=F,cache=T,out.width=’0.5   
+               textwidth’&gt;&gt;= @                &lt;&lt;boxmax,echo=F,cache=T,out.width=’0.5
+               textwidth’&gt;&gt;= @               
+  ------------------------------------------------ -----------------------------------------------
+
+&lt;&lt;boxalti,echo=F,cache=T,include=T&gt;&gt;= @
+
+  -------------------------------------------- -----------------------------------------------
+                       a                                              b
+   &lt;&lt;Stot,echo=F,cache=F,out.width=’0.5  
+             linewidth’&gt;&gt;= @              &lt;&lt;Snatexo,echo=F,cache=F,out.width=’0.5
+             linewidth’&gt;&gt;= @             
+  -------------------------------------------- -----------------------------------------------
+
+  ----------------------------------------------- -----------------------------------------------
+   &lt;&lt;Snatnul,echo=F,cache=T,out.width=’0.5  
+               linewidth’&gt;&gt;= @               &lt;&lt;Sexonul,echo=F,cache=T,out.width=’0.5
+               linewidth’&gt;&gt;= @              
+  ----------------------------------------------- -----------------------------------------------
+
+# Supporting information
