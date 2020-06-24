@@ -1,5 +1,5 @@
 rm(list=ls())
-setwd("C:/Users/E7240/Documents/Reunion")
+setwd("D:/PROJETS/PROJET_Reunion/zoizos/data")
 library(ade4)
 
 ### data ### 
@@ -9,10 +9,10 @@ mil=read.table("MIL_modif29042020.txt",header=T,sep="\t",row.names=1)
 
 ### exploration ###
 
-# fréquence cumulée des habitats par point
+# fr?quence cumul?e des habitats par point
 fr.hab=apply(mil[,-1],1,"sum")
 summary(fr.hab)
-hist(fr.hab) #!! il y a des surfaces cumulées >100% sur certains points
+hist(fr.hab) #!! il y a des surfaces cumul?es >100% sur certains points
 
 # distribution des habitats
 x11()
@@ -27,18 +27,18 @@ hist(mil[,1])
 
 ### PCOA sur la matrice habitats  ###
 
-# fréquences d'habitat
+# fr?quences d'habitat
 hab=prep.fuzzy(mil[,-1],col.blocks=ncol(mil)-1,labels="habita")
 
 # altitude
 alti=as.data.frame(mil[,1])
 rownames(alti) =rownames(mil)
-# matrice de dissimilarité de gower
+# matrice de dissimilarit? de gower
 ktab=ktab.list.df(list(alti,hab))
 distmat=dist.ktab(ktab,type=c("Q","F"),option="scaledBYrange")
 
 # PCOA
-pco.habitat=dudi.pco(distmat,scannf=F,nf=5) # avec 5 axes environ 70% de variation expliquée
+pco.habitat=dudi.pco(distmat,scannf=F,nf=5) # avec 5 axes environ 70% de variation expliqu?e
 
 # eigenvalues
 screeplot(pco.habitat)
@@ -85,14 +85,14 @@ cumsum(afc.ois$eig)/sum(afc.ois$eig)
 # nuage de points
 s.label(afc.ois$li)
 
-# 2 points extrêmes
+# 2 points extr?mes
 ois[c("ID187","ID225"),]
 apply(ois,2,"max")
 
 # position de ID187 et ID225 sur les gradients d'habitat
 extr.ois=pco.habitat$li[c("ID187","ID225"),]
 
-# ces deux sites sont les seuls à avoir FRPO (le Francolin)
+# ces deux sites sont les seuls ? avoir FRPO (le Francolin)
 par(mfrow=c(2,2))
 plot(pco.habitat$li[,1],pco.habitat$li[,2],bty="n",pch=21,bg="gray70",col="gray70",xlab="PCO habitat 1",ylab="PCO habitat 2")
 abline(h=0,lty="dashed")
@@ -114,18 +114,18 @@ abline(h=0,lty="dashed")
 abline(v=0,lty="dashed")
 text(extr.ois[,1],extr.ois[,5],labels=rownames(extr.ois),col="darkred")
 
-### AFC oiseaux sans espèces sous-représentées ###
+### AFC oiseaux sans esp?ces sous-repr?sent?es ###
 
 # abondances
 sum(ois)
 0.05*sum(ois)
 0.01*sum(ois)
 
-# fréquence
+# fr?quence
 frq.cum=colSums(ois)/nrow(ois)
 frq.cum[frq.cum<0.05]
 
-# AFC sans les espèces vues sur moins de 5% des points
+# AFC sans les esp?ces vues sur moins de 5% des points
 
 ois.com=ois[,names(frq.cum[frq.cum>0.05])]
 afc.ois.com=dudi.coa(ois.com,scannf=F,nf=2)
@@ -138,9 +138,9 @@ s.label(afc.ois.com$li)
 
 library(fda)
 
-### estimation des courbes pour toutes les espèces ###
+### estimation des courbes pour toutes les esp?ces ###
 
-# réordonner par altitude
+# r?ordonner par altitude
 oisb=as.matrix(ois)
 alti2=data.frame(rownames(alti),alti[,1])
 alti2=alti2[order(alti2[,2]),]
@@ -159,14 +159,14 @@ for(j in 1:36){
   datamyb=Data2fd(y=oisc,argvals=alti3,basisobj=myb)
   evalmyb=eval.fd(evalarg=alti3,fdobj=datamyb)
   
-  # MSE données
+  # MSE donn?es
   delta=vector("numeric",length=ncol(evalmyb))
   for(k in 1:ncol(evalmyb)){
     delta[k]=mean((evalmyb[,k]-oisc[,k])^2)
   }
   MSE1[j]=mean(delta)
   
-  # MSE courbe estimée (variation autour de la courbe moyenne)
+  # MSE courbe estim?e (variation autour de la courbe moyenne)
   mean.myb=mean.fd(datamyb)
   evalmean.myb=eval.fd(evalarg=alti3,fdobj=mean.myb)
   
@@ -178,14 +178,14 @@ for(j in 1:36){
   
 }
 
-# on représente la variation du MSE avec l'ordre : on veut minimiser l'écart à la courbe moyenne et l'écart à la courbe d'écart aux données
+# on repr?sente la variation du MSE avec l'ordre : on veut minimiser l'?cart ? la courbe moyenne et l'?cart ? la courbe d'?cart aux donn?es
 plot(1:36,MSE1,type="l",ylim=c(0,4))
-lines(1:36,MSE2,type="l",lty="dashed") # la représentation n'est de toute façon pas très bonne, probablement à cause des patterns de réponse à l'altitude mal marqués
+lines(1:36,MSE2,type="l",lty="dashed") # la repr?sentation n'est de toute fa?on pas tr?s bonne, probablement ? cause des patterns de r?ponse ? l'altitude mal marqu?s
 
 # faute de mieux on reste sur une base 4
 
 
-### Réestimer sur données normalisées par le max de chaque espèce ###
+### R?estimer sur donn?es normalis?es par le max de chaque esp?ce ###
 
 # normaliser les abondances
 oiscb=log(oisc+1)
@@ -205,7 +205,7 @@ evalmyb6=eval.fd(evalarg=alti4,fdobj=datamyb6)
 plot(alti4,oisd[,10],pch=21,bg="gray70",col="gray70",xlab="altitude",ylab="log(abondance)",main=colnames(oisd)[10])
 lines(alti4,evalmyb6[,10],type="l",col="red")
 
-# courbes toutes espèces
+# courbes toutes esp?ces
 dev.off()
 plot(x=0,y=0,xlim=c(0,1),ylim=c(0,1),type="n",xlab="altitude",ylab="estimation log(abondance)")
 for(i in 1:ncol(evalmyb6)){
@@ -215,7 +215,7 @@ for(i in 1:ncol(evalmyb6)){
 # FPCA
 mypca=pca.fd(datamyb6,nharm=2)
 
-# courbes extrêmes (et moyenne) qu'on a théoriquement aux extrémités des axes
+# courbes extr?mes (et moyenne) qu'on a th?oriquement aux extr?mit?s des axes
 par(mfrow=c(1,2))
 plot(mypca)
 
