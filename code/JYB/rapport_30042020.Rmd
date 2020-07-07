@@ -1,7 +1,7 @@
 ---
 title: "Analyses préliminaires JD La Réunion"
 author: "Jean-Yves Barnagaud (jean-yves.barnagaud@cefe.cnrs.fr)"
-date: "30 avril 2020"
+date: 
 output: word_document
 ---
 
