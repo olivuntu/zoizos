@@ -1,11 +1,12 @@
 ---
 title: "Analyses préliminaires JD La Réunion"
+author: "Jean-Yves Barnagaud (jean-yves.barnagaud@cefe.cnrs.fr)"
 date: 
 output: word_document
 ---
 
 ```{r setup, include = FALSE, cache = FALSE}
-knitr::opts_chunk$set(echo = TRUE, cache = T, eval = T, echo = F, cache.path = '../cache/', fig.path = '../figures/')
+knitr::opts_chunk$set(echo = TRUE, cache = F, eval = T, cache.path = '../cache/', fig.path = '../figures/')
 #knitr::opts_knit$set(root.dir = 'C:/Users/E7240/Documents/Reunion')
 ```
 
@@ -89,9 +90,18 @@ hist(mil[,1])
 
 ## Analyse en coordonnées principales sur la matrice d'habitats
 
+Version avec regroupement de variables : BAOU = CULT + SAHE + SAAR, FRIC = FRAR + FRBA
+
+
 ```{r,echo=F}
 # fréquences d'habitat
 library(ade4)
+
+mil %<>% name_rows() %>%
+  mutate(BAOU = CULT + SAHE + SAAR, FRIC = FRAR + FRBA) %>%
+  dplyr::select(- CULT, - SAHE, - SAAR, - FRAR, - FRBA) %>%
+  name_rows()
+
 hab=prep.fuzzy(mil[,-1],col.blocks=ncol(mil)-1,labels="habita")
 
 # altitude
@@ -272,17 +282,17 @@ Il y a un effet arche assez fort, mais au moins les points sont bien étalés da
 Cette analyse fonctionnelle ne porte **que sur l'altitude** et sur **les abondances d'espèces log-transformées**. C'est donc très préliminaire, mais l'altitude étant très structurante ça donne déjà une première idée des distributions d'espèces. 
 
 ```{r,echo=F}
-library(fda)
+#library(fda)
 
 ### estimation des courbes pour toutes les espèces ###
 
 # réordonner par altitude
-oisb=as.matrix(ois)
-alti2=data.frame(rownames(alti),alti[,1])
-alti2=alti2[order(alti2[,2]),]
-alti3=as.numeric(alti2[,2])
-names(alti3)=alti2[,1]
-oisc=oisb[names(alti3),]
+oisb <- as.matrix(ois)
+alti2 <- data.frame(rownames(alti),alti[,1])
+alti2 <- alti2[order(alti2[,2]),]
+alti3 <- as.numeric(alti2[,2])
+names(alti3) <- alti2[,1]
+oisc <- oisb[names(alti3),]
 ```
 
 

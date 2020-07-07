@@ -34,6 +34,46 @@
 
 
 
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 \usepackage{graphicx}
   
@@ -60,7 +100,7 @@
   \usepackage[unicode=true]{hyperref}
 \fi
 \hypersetup{breaklinks=true,
-            pdfauthor={},
+            pdfauthor={Jean-Yves Barnagaud (jean-yves.barnagaud@cefe.cnrs.fr)},
             pdftitle={Analyses préliminaires JD La Réunion},
             colorlinks=true,
             citecolor=blue,
@@ -86,7 +126,10 @@
 \title{Analyses préliminaires JD La Réunion}
 
 
-
+    \usepackage{authblk}
+                                        \author{Jean-Yves Barnagaud
+(\href{mailto:jean-yves.barnagaud@cefe.cnrs.fr}{\nolinkurl{jean-yves.barnagaud@cefe.cnrs.fr}})}
+                        
   \date{}
 %  \predate{}\postdate{}
 
@@ -221,14 +264,33 @@ approche on privilégie et quelles analyses supplémentaires
 
 Deux tables de données :
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ois <-}\StringTok{ }\KeywordTok{read.table}\NormalTok{(}\StringTok{"data/OIS_modif29042020.txt"}\NormalTok{, }\DataTypeTok{header =}\NormalTok{ T, }\DataTypeTok{sep =} \StringTok{"}\CharTok{\textbackslash{}t}\StringTok{"}\NormalTok{, }\DataTypeTok{row.names =} \DecValTok{1}\NormalTok{)}
+\NormalTok{mil <-}\StringTok{ }\KeywordTok{read.table}\NormalTok{(}\StringTok{"data/MIL_modif29042020.txt"}\NormalTok{, }\DataTypeTok{header =}\NormalTok{ T, }\DataTypeTok{sep =} \StringTok{"}\CharTok{\textbackslash{}t}\StringTok{"}\NormalTok{, }\DataTypeTok{row.names =} \DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 Les colonnes sont décrites dans les fichiers excel initiaux.
 
 \hypertarget{table-oiseaux}{%
 \subsection{table oiseaux}\label{table-oiseaux}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{dim}\NormalTok{(ois)}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{verbatim}
 ## [1] 410  23
 \end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{summary}\NormalTok{(ois)}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{verbatim}
 ##       ACTR             CIMA              COCH               COCO             COFR              ESAS             FOMA             FRPO        
@@ -260,9 +322,21 @@ asymétriques, sans surprise.
 \hypertarget{table-habitats}{%
 \subsection{table habitats}\label{table-habitats}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{dim}\NormalTok{(mil)}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{verbatim}
 ## [1] 410  16
 \end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{summary}\NormalTok{(mil)}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{verbatim}
 ##       ALTI             ACDE             ACMI               BOCO             BRAN             CANN             CRYP             CULT        
@@ -284,10 +358,24 @@ asymétriques, sans surprise.
 Attention : il y a des fréquences cumulées d'habitats par point
 \textgreater{}100\% !
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# fréquence cumulée des habitats par point}
+\NormalTok{fr.hab=}\KeywordTok{apply}\NormalTok{(mil[,}\OperatorTok{-}\DecValTok{1}\NormalTok{],}\DecValTok{1}\NormalTok{,}\StringTok{"sum"}\NormalTok{)}
+\KeywordTok{summary}\NormalTok{(fr.hab)}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{verbatim}
 ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##   0.990   1.000   1.000   1.001   1.000   1.010
 \end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{hist}\NormalTok{(fr.hab)}
+\end{Highlighting}
+\end{Shaded}
 
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-4-1}
 
@@ -295,7 +383,25 @@ Attention : il y a des fréquences cumulées d'habitats par point
 \subsubsection{Distribution des
 habitats}\label{distribution-des-habitats}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow=}\KeywordTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{3}\NormalTok{))}
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{2}\OperatorTok{:}\DecValTok{10}\NormalTok{)\{}
+  \KeywordTok{hist}\NormalTok{(mil[,i])}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-5-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow=}\KeywordTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{11}\OperatorTok{:}\DecValTok{16}\NormalTok{)\{}
+  \KeywordTok{hist}\NormalTok{(mil[,i])}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
 
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-6-1} Les
 distris des habitats posent deux problèmes :
@@ -308,21 +414,48 @@ distris des habitats posent deux problèmes :
 
 Pour l'altitude, variation assez classique :
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{hist}\NormalTok{(mil[,}\DecValTok{1}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-7-1}
 
 \hypertarget{analyse-en-coordonnuxe9es-principales-sur-la-matrice-dhabitats}{%
 \subsection{Analyse en coordonnées principales sur la matrice
 d'habitats}\label{analyse-en-coordonnuxe9es-principales-sur-la-matrice-dhabitats}}
 
+Version avec regroupement de variables : BAOU = CULT + SAHE + SAAR, FRIC
+= FRAR + FRBA
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# PCOA}
+\NormalTok{pco.habitat <-}\StringTok{ }\KeywordTok{dudi.pco}\NormalTok{(distmat, }\DataTypeTok{scannf =}\NormalTok{ F, }\DataTypeTok{nf =} \DecValTok{5}\NormalTok{) }\CommentTok{# avec 5 axes environ 70% de variation expliquée}
+\end{Highlighting}
+\end{Shaded}
+
 L'analyse en coordonnées principale permet de résoudre les deux
 problèmes mentionnés ci dessus et d'ajouter l'altitude aux variables
 d'habitat.
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{screeplot}\NormalTok{(pco.habitat)}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/wat-1}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{100}\OperatorTok{*}\KeywordTok{cumsum}\NormalTok{(pco.habitat}\OperatorTok{$}\NormalTok{eig)}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(pco.habitat}\OperatorTok{$}\NormalTok{eig)}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{verbatim}
-##  [1]  20.14260  33.63155  45.67581  57.21639  66.67637  74.33942  80.98807  87.08968  90.99293  94.47521  97.65528  98.70365  99.28549  99.61633
-## [15]  99.82905 100.00000
+##  [1]  21.54544  35.58126  49.12026  61.12454  72.31838  81.34551  88.17896  94.37856  97.61916  98.66722  99.40139  99.75656 100.00000
 \end{verbatim}
 
 On est sur des \% de variance expliquée assez classiques pour ce genre
@@ -333,11 +466,44 @@ de données. En première intention je retiens 5 composantes.
 des 4
 autres)}\label{projection-des-points-et-des-variables-axe-1-vs-chacun-des-4-autres}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# axes 1 vs 2}
+\KeywordTok{s.label}\NormalTok{(pco.habitat}\OperatorTok{$}\NormalTok{li,}\DataTypeTok{ppoints=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\FloatTok{0.8}\NormalTok{,}\DataTypeTok{col=}\NormalTok{c2),}\DataTypeTok{plabels=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\DecValTok{0}\NormalTok{,}\DataTypeTok{boxes=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{draw=}\NormalTok{F)))}
+\NormalTok{sp=}\KeywordTok{supcol}\NormalTok{(pco.habitat,mil)}
+\KeywordTok{s.arrow}\NormalTok{(sp}\OperatorTok{$}\NormalTok{cosup,}\DataTypeTok{add=}\NormalTok{T,}\DataTypeTok{plabels=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\DecValTok{1}\NormalTok{,}\DataTypeTok{col=}\StringTok{"darkblue"}\NormalTok{,}\DataTypeTok{cex=}\FloatTok{0.7}\NormalTok{,}\DataTypeTok{boxes=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{draw=}\NormalTok{F)))}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-11-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# axes 1 vs 3}
+\KeywordTok{s.label}\NormalTok{(pco.habitat}\OperatorTok{$}\NormalTok{li,}\DataTypeTok{xax=}\DecValTok{1}\NormalTok{,}\DataTypeTok{yax=}\DecValTok{3}\NormalTok{,}\DataTypeTok{ppoints=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\FloatTok{0.8}\NormalTok{,}\DataTypeTok{col=}\NormalTok{c2),}\DataTypeTok{plabels=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\DecValTok{0}\NormalTok{,}\DataTypeTok{boxes=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{draw=}\NormalTok{F)))}
+\KeywordTok{s.arrow}\NormalTok{(sp}\OperatorTok{$}\NormalTok{cosup,}\DataTypeTok{xax=}\DecValTok{1}\NormalTok{,}\DataTypeTok{yax=}\DecValTok{3}\NormalTok{,}\DataTypeTok{add=}\NormalTok{T,}\DataTypeTok{plabels=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\DecValTok{1}\NormalTok{,}\DataTypeTok{col=}\StringTok{"darkblue"}\NormalTok{,}\DataTypeTok{cex=}\FloatTok{0.7}\NormalTok{,}\DataTypeTok{boxes=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{draw=}\NormalTok{F)))}
+\end{Highlighting}
+\end{Shaded}
 
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-12-1}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# axes 1 vs 4}
+\KeywordTok{s.label}\NormalTok{(pco.habitat}\OperatorTok{$}\NormalTok{li,}\DataTypeTok{xax=}\DecValTok{1}\NormalTok{,}\DataTypeTok{yax=}\DecValTok{4}\NormalTok{,}\DataTypeTok{ppoints=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\FloatTok{0.8}\NormalTok{,}\DataTypeTok{col=}\NormalTok{c2),}\DataTypeTok{plabels=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\DecValTok{0}\NormalTok{,}\DataTypeTok{boxes=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{draw=}\NormalTok{F)))}
+\KeywordTok{s.arrow}\NormalTok{(sp}\OperatorTok{$}\NormalTok{cosup,}\DataTypeTok{xax=}\DecValTok{1}\NormalTok{,}\DataTypeTok{yax=}\DecValTok{4}\NormalTok{,}\DataTypeTok{add=}\NormalTok{T,}\DataTypeTok{plabels=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\DecValTok{1}\NormalTok{,}\DataTypeTok{col=}\StringTok{"darkblue"}\NormalTok{,}\DataTypeTok{cex=}\FloatTok{0.7}\NormalTok{,}\DataTypeTok{boxes=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{draw=}\NormalTok{F)))}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-13-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# axes 1 vs 5}
+\KeywordTok{s.label}\NormalTok{(pco.habitat}\OperatorTok{$}\NormalTok{li,}\DataTypeTok{xax=}\DecValTok{1}\NormalTok{,}\DataTypeTok{yax=}\DecValTok{5}\NormalTok{,}\DataTypeTok{ppoints=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\FloatTok{0.8}\NormalTok{,}\DataTypeTok{col=}\NormalTok{c2),}\DataTypeTok{plabels=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\DecValTok{0}\NormalTok{,}\DataTypeTok{boxes=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{draw=}\NormalTok{F)))}
+\KeywordTok{s.arrow}\NormalTok{(sp}\OperatorTok{$}\NormalTok{cosup,}\DataTypeTok{xax=}\DecValTok{1}\NormalTok{,}\DataTypeTok{yax=}\DecValTok{5}\NormalTok{,}\DataTypeTok{add=}\NormalTok{T,}\DataTypeTok{plabels=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{alpha=}\DecValTok{1}\NormalTok{,}\DataTypeTok{col=}\StringTok{"darkblue"}\NormalTok{,}\DataTypeTok{cex=}\FloatTok{0.7}\NormalTok{,}\DataTypeTok{boxes=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{draw=}\NormalTok{F)))}
+\end{Highlighting}
+\end{Shaded}
 
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-14-1}
 
@@ -359,6 +525,13 @@ apport là dessus? Voilà ce que j'arrive à sortir:
 \hypertarget{afc-sur-les-abondances}{%
 \paragraph{AFC sur les abondances}\label{afc-sur-les-abondances}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# valeurs propres}
+\KeywordTok{cumsum}\NormalTok{(afc.ois}\OperatorTok{$}\NormalTok{eig)}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(afc.ois}\OperatorTok{$}\NormalTok{eig)}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{verbatim}
 ##  [1] 0.1330918 0.2302468 0.3112237 0.3820102 0.4511414 0.5094170 0.5662222 0.6191457 0.6691835 0.7093530 0.7458145 0.7801068 0.8105675 0.8408215
 ## [15] 0.8685437 0.8954101 0.9199879 0.9439219 0.9661262 0.9810814 0.9929844 1.0000000
@@ -367,15 +540,35 @@ apport là dessus? Voilà ce que j'arrive à sortir:
 Pas évident de retenir des gradients bien clairs, la variation est trop
 graduelle. Passer en présence/absence ne change rien au problème.
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# nuage de points}
+\KeywordTok{s.label}\NormalTok{(afc.ois}\OperatorTok{$}\NormalTok{li)}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-17-1}
 
 Il y a deux points extrêmes :
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 2 points extrêmes}
+\NormalTok{ois[}\KeywordTok{c}\NormalTok{(}\StringTok{"ID187"}\NormalTok{,}\StringTok{"ID225"}\NormalTok{),]}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{verbatim}
 ##       ACTR CIMA COCH COCO COFR ESAS FOMA FRPO GEST HYBO LOPU MAMA PADO PEAS PHBO PLCU PYJO SATE STPI TEBO TUNI ZOBO ZOOL
 ## ID187    2    0    0    0    3    0    0    5    4    0    0    0    0    0    0    1    1    0    0    0    0    5    0
 ## ID225    2    0    0    0    0    0    0    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
 \end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{apply}\NormalTok{(ois,}\DecValTok{2}\NormalTok{,}\StringTok{"max"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{verbatim}
 ## ACTR CIMA COCH COCO COFR ESAS FOMA FRPO GEST HYBO LOPU MAMA PADO PEAS PHBO PLCU PYJO SATE STPI TEBO TUNI ZOBO ZOOL 
@@ -390,17 +583,54 @@ des 4 autres) :
 
 1 vs 2:
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow=}\KeywordTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\KeywordTok{plot}\NormalTok{(pco.habitat}\OperatorTok{$}\NormalTok{li[,}\DecValTok{1}\NormalTok{],pco.habitat}\OperatorTok{$}\NormalTok{li[,}\DecValTok{2}\NormalTok{],}\DataTypeTok{bty=}\StringTok{"n"}\NormalTok{,}\DataTypeTok{pch=}\DecValTok{21}\NormalTok{,}\DataTypeTok{bg=}\StringTok{"gray70"}\NormalTok{,}\DataTypeTok{col=}\StringTok{"gray70"}\NormalTok{,}\DataTypeTok{xlab=}\StringTok{"PCO habitat 1"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"PCO habitat 2"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{h=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\StringTok{"dashed"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{v=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\StringTok{"dashed"}\NormalTok{)}
+\KeywordTok{text}\NormalTok{(extr.ois[,}\DecValTok{1}\NormalTok{],extr.ois[,}\DecValTok{2}\NormalTok{],}\DataTypeTok{labels=}\KeywordTok{rownames}\NormalTok{(extr.ois),}\DataTypeTok{col=}\StringTok{"darkred"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-20-1}
 
 1 vs 3
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(pco.habitat}\OperatorTok{$}\NormalTok{li[,}\DecValTok{1}\NormalTok{],pco.habitat}\OperatorTok{$}\NormalTok{li[,}\DecValTok{3}\NormalTok{],}\DataTypeTok{bty=}\StringTok{"n"}\NormalTok{,}\DataTypeTok{pch=}\DecValTok{21}\NormalTok{,}\DataTypeTok{bg=}\StringTok{"gray70"}\NormalTok{,}\DataTypeTok{col=}\StringTok{"gray70"}\NormalTok{,}\DataTypeTok{xlab=}\StringTok{"PCO habitat 1"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"PCO habitat 3"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{h=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\StringTok{"dashed"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{v=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\StringTok{"dashed"}\NormalTok{)}
+\KeywordTok{text}\NormalTok{(extr.ois[,}\DecValTok{1}\NormalTok{],extr.ois[,}\DecValTok{3}\NormalTok{],}\DataTypeTok{labels=}\KeywordTok{rownames}\NormalTok{(extr.ois),}\DataTypeTok{col=}\StringTok{"darkred"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-21-1}
 
 1 vs 4 :
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(pco.habitat}\OperatorTok{$}\NormalTok{li[,}\DecValTok{1}\NormalTok{],pco.habitat}\OperatorTok{$}\NormalTok{li[,}\DecValTok{4}\NormalTok{],}\DataTypeTok{bty=}\StringTok{"n"}\NormalTok{,}\DataTypeTok{pch=}\DecValTok{21}\NormalTok{,}\DataTypeTok{bg=}\StringTok{"gray70"}\NormalTok{,}\DataTypeTok{col=}\StringTok{"gray70"}\NormalTok{,}\DataTypeTok{xlab=}\StringTok{"PCO habitat 1"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"PCO habitat 4"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{h=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\StringTok{"dashed"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{v=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\StringTok{"dashed"}\NormalTok{)}
+\KeywordTok{text}\NormalTok{(extr.ois[,}\DecValTok{1}\NormalTok{],extr.ois[,}\DecValTok{4}\NormalTok{],}\DataTypeTok{labels=}\KeywordTok{rownames}\NormalTok{(extr.ois),}\DataTypeTok{col=}\StringTok{"darkred"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-22-1}
 
 1 vs 5:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(pco.habitat}\OperatorTok{$}\NormalTok{li[,}\DecValTok{1}\NormalTok{],pco.habitat}\OperatorTok{$}\NormalTok{li[,}\DecValTok{5}\NormalTok{],}\DataTypeTok{bty=}\StringTok{"n"}\NormalTok{,}\DataTypeTok{pch=}\DecValTok{21}\NormalTok{,}\DataTypeTok{bg=}\StringTok{"gray70"}\NormalTok{,}\DataTypeTok{col=}\StringTok{"gray70"}\NormalTok{,}\DataTypeTok{xlab=}\StringTok{"PCO habitat 1"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"PCO habitat 5"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{h=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\StringTok{"dashed"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{v=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\StringTok{"dashed"}\NormalTok{)}
+\KeywordTok{text}\NormalTok{(extr.ois[,}\DecValTok{1}\NormalTok{],extr.ois[,}\DecValTok{5}\NormalTok{],}\DataTypeTok{labels=}\KeywordTok{rownames}\NormalTok{(extr.ois),}\DataTypeTok{col=}\StringTok{"darkred"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-23-1}
 
@@ -418,17 +648,44 @@ points}\label{table-oiseaux-restreint-aux-espuxe8ces-pruxe9sentes-sur-5-des-poin
 \subsubsection{AFC oiseaux sans espèces
 sous-représentées}\label{afc-oiseaux-sans-espuxe8ces-sous-repruxe9sentuxe9es}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# abondances}
+\KeywordTok{sum}\NormalTok{(ois)}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{verbatim}
 ## [1] 6529
 \end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FloatTok{0.05}\OperatorTok{*}\KeywordTok{sum}\NormalTok{(ois)}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{verbatim}
 ## [1] 326.45
 \end{verbatim}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\FloatTok{0.01}\OperatorTok{*}\KeywordTok{sum}\NormalTok{(ois)}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{verbatim}
 ## [1] 65.29
 \end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# fréquence}
+\NormalTok{frq.cum=}\KeywordTok{colSums}\NormalTok{(ois)}\OperatorTok{/}\KeywordTok{nrow}\NormalTok{(ois)}
+\NormalTok{frq.cum[frq.cum}\OperatorTok{<}\FloatTok{0.05}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{verbatim}
 ##        CIMA        COCH        FRPO        LOPU        MAMA        PHBO 
@@ -439,12 +696,33 @@ sous-représentées}\label{afc-oiseaux-sans-espuxe8ces-sous-repruxe9sentuxe9es}}
 \section{AFC sans les espèces vues sur moins de 5\% des
 points}\label{afc-sans-les-espuxe8ces-vues-sur-moins-de-5-des-points}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ois.com=ois[,}\KeywordTok{names}\NormalTok{(frq.cum[frq.cum}\OperatorTok{>}\FloatTok{0.05}\NormalTok{])]}
+\NormalTok{afc.ois.com=}\KeywordTok{dudi.coa}\NormalTok{(ois.com,}\DataTypeTok{scannf=}\NormalTok{F,}\DataTypeTok{nf=}\DecValTok{2}\NormalTok{)}
+\KeywordTok{cumsum}\NormalTok{(afc.ois.com}\OperatorTok{$}\NormalTok{eig)}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(afc.ois.com}\OperatorTok{$}\NormalTok{eig)}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{verbatim}
 ##  [1] 0.1685298 0.2707443 0.3599813 0.4456636 0.5192498 0.5897839 0.6562875 0.7063508 0.7519071 0.7955382 0.8342180 0.8718459 0.9068289 0.9407699
 ## [15] 0.9718166 1.0000000
 \end{verbatim}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{s.label}\NormalTok{(afc.ois.com}\OperatorTok{$}\NormalTok{li)}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-25-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{s.label}\NormalTok{(afc.ois.com}\OperatorTok{$}\NormalTok{co)}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-25-2}
 
 Il y a un effet arche assez fort, mais au moins les points sont bien
@@ -465,6 +743,14 @@ Le choix de la base fonctionnelle optimale se fait par une comparaison
 entre des écarts fonctions-données pour différentes bases. Le but est
 d'avoir un compromis entre sur- et sous-lissage.
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# on représente la variation du MSE avec l'ordre : on veut minimiser l'écart à la courbe moyenne et l'écart à la courbe d'écart aux données}
+\KeywordTok{plot}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{36}\NormalTok{,MSE1,}\DataTypeTok{type=}\StringTok{"l"}\NormalTok{,}\DataTypeTok{ylim=}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{4}\NormalTok{))}
+\KeywordTok{lines}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{36}\NormalTok{,MSE2,}\DataTypeTok{type=}\StringTok{"l"}\NormalTok{,}\DataTypeTok{lty=}\StringTok{"dashed"}\NormalTok{) }
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-28-1}
 
 Quelle que soit la base, la représentation n'est de toute façon pas très
@@ -481,11 +767,31 @@ On travaille sur abondances log transformées. Les abondances et les
 altitudes sont normalisées pour limiter l'impact de la rareté des
 espèces et faciliter l'estimation numérique.
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# normaliser les abondances}
+\NormalTok{oiscb=}\KeywordTok{log}\NormalTok{(oisc}\OperatorTok{+}\DecValTok{1}\NormalTok{)}
+\NormalTok{maxab=}\KeywordTok{apply}\NormalTok{(oiscb,}\DecValTok{2}\NormalTok{,max)}
+\NormalTok{oisd=oiscb}\OperatorTok{/}\NormalTok{maxab}
+
+\CommentTok{# normaliser les altitudes}
+\NormalTok{alti4=(alti3}\OperatorTok{-}\KeywordTok{min}\NormalTok{(alti3))}\OperatorTok{/}\KeywordTok{max}\NormalTok{((alti3)}\OperatorTok{-}\KeywordTok{min}\NormalTok{(alti3))}
+\end{Highlighting}
+\end{Shaded}
+
 \hypertarget{estimation-des-courbes}{%
 \subsubsection{Estimation des courbes}\label{estimation-des-courbes}}
 
 Ces courbes décrivent, pour chaque espèce, la réponse à l'altitude
 estimée à partir de splines de base 4.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# plot d'une courbe}
+\KeywordTok{plot}\NormalTok{(alti4,oisd[,}\DecValTok{10}\NormalTok{],}\DataTypeTok{pch=}\DecValTok{21}\NormalTok{,}\DataTypeTok{bg=}\StringTok{"gray70"}\NormalTok{,}\DataTypeTok{col=}\StringTok{"gray70"}\NormalTok{,}\DataTypeTok{xlab=}\StringTok{"altitude"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"log(abondance)"}\NormalTok{,}\DataTypeTok{main=}\KeywordTok{colnames}\NormalTok{(oisd)[}\DecValTok{10}\NormalTok{])}
+\KeywordTok{lines}\NormalTok{(alti4,evalmyb6[,}\DecValTok{10}\NormalTok{],}\DataTypeTok{type=}\StringTok{"l"}\NormalTok{,}\DataTypeTok{col=}\StringTok{"red"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-31-1}
 
@@ -496,15 +802,37 @@ leur amplitude n'est pas bonne.
 
 Comparaison des courbes de toutes les espèces :
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# courbes toutes espèces}
+\KeywordTok{plot}\NormalTok{(}\DataTypeTok{x=}\DecValTok{0}\NormalTok{,}\DataTypeTok{y=}\DecValTok{0}\NormalTok{,}\DataTypeTok{xlim=}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{),}\DataTypeTok{ylim=}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{),}\DataTypeTok{type=}\StringTok{"n"}\NormalTok{,}\DataTypeTok{xlab=}\StringTok{"altitude"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"estimation log(abondance)"}\NormalTok{)}
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{ncol}\NormalTok{(evalmyb6))\{}
+  \KeywordTok{lines}\NormalTok{(alti4,evalmyb6[,i],}\DataTypeTok{type=}\StringTok{"l"}\NormalTok{,}\DataTypeTok{col=}\StringTok{"red"}\NormalTok{)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-32-1}
 
 \hypertarget{acp-fonctionnelle}{%
 \subsection{ACP fonctionnelle}\label{acp-fonctionnelle}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mypca=}\KeywordTok{pca.fd}\NormalTok{(datamyb6,}\DataTypeTok{nharm=}\DecValTok{2}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 Cette ACP permet de créer des typologies de courbes. Les axes opposent
 des courbes de formes différentes.
 
 Variance expliquée :
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{100}\OperatorTok{*}\NormalTok{mypca}\OperatorTok{$}\NormalTok{varprop}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{verbatim}
 ## [1] 87.45767 11.89144
@@ -513,6 +841,14 @@ Variance expliquée :
 \hypertarget{interpruxe9tation-des-axes}{%
 \subsubsection{Interprétation des
 axes}\label{interpruxe9tation-des-axes}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# courbes extrêmes (et moyenne) qu'on a théoriquement aux extrémités des axes}
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow=}\KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\KeywordTok{plot}\NormalTok{(mypca,}\DataTypeTok{xlab=}\StringTok{"altitude normalisée"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-35-1}
 
@@ -532,6 +868,24 @@ probablement réitérer l'exercice sur les axes de PCOA si on les comprend
 bien. On peut aussi interpréter les axes à partir des courbes quantiles,
 afin d'affiner la compréhension:
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# axe 1  en quantiles}
+\NormalTok{qt1=}\KeywordTok{quantile}\NormalTok{(mypca}\OperatorTok{$}\NormalTok{scores[,}\DecValTok{1}\NormalTok{],}\DataTypeTok{p=}\KeywordTok{c}\NormalTok{(}\FloatTok{0.05}\NormalTok{,}\FloatTok{0.25}\NormalTok{,}\FloatTok{0.5}\NormalTok{,}\FloatTok{0.75}\NormalTok{,}\FloatTok{0.95}\NormalTok{))}
+\NormalTok{scr.qt1=}\KeywordTok{which}\NormalTok{(mypca}\OperatorTok{$}\NormalTok{scores[,}\DecValTok{1}\NormalTok{]}\OperatorTok{<}\NormalTok{qt1[}\DecValTok{1}\NormalTok{])}
+\NormalTok{eva.qt1=evalmyb6[,scr.qt1]}
+\NormalTok{mcurve.qt1=}\KeywordTok{apply}\NormalTok{(eva.qt1,}\DecValTok{1}\NormalTok{,mean)}
+\KeywordTok{plot}\NormalTok{(alti4,mcurve.qt1,}\DataTypeTok{type=}\StringTok{"l"}\NormalTok{)}
+
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{2}\OperatorTok{:}\KeywordTok{length}\NormalTok{(qt1))\{}
+\NormalTok{  scr.qt1=}\KeywordTok{which}\NormalTok{(mypca}\OperatorTok{$}\NormalTok{scores[,}\DecValTok{1}\NormalTok{]}\OperatorTok{<}\NormalTok{qt1[i])}
+\NormalTok{  eva.qt1=evalmyb6[,scr.qt1]}
+\NormalTok{  mcurve.qt1=}\KeywordTok{apply}\NormalTok{(eva.qt1,}\DecValTok{1}\NormalTok{,mean)}
+  \KeywordTok{lines}\NormalTok{(alti4,mcurve.qt1,}\DataTypeTok{type=}\StringTok{"l"}\NormalTok{,}\DataTypeTok{col=}\NormalTok{i}\OperatorTok{+}\DecValTok{1}\NormalTok{)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-36-1}
 
 Les quantiles vont du noir (-) au violet (+) et montrent bien une
@@ -541,12 +895,41 @@ brusquement à des espèces qui ont un optimum d'altitude mais une
 variation peu marquée. C'est déjà plus interprétable que les
 déformations.
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# axe 2  en quantiles}
+\NormalTok{qt2=}\KeywordTok{quantile}\NormalTok{(mypca}\OperatorTok{$}\NormalTok{scores[,}\DecValTok{2}\NormalTok{],}\DataTypeTok{p=}\KeywordTok{c}\NormalTok{(}\FloatTok{0.05}\NormalTok{,}\FloatTok{0.25}\NormalTok{,}\FloatTok{0.5}\NormalTok{,}\FloatTok{0.75}\NormalTok{,}\FloatTok{0.95}\NormalTok{))}
+\NormalTok{scr.qt2=}\KeywordTok{which}\NormalTok{(mypca}\OperatorTok{$}\NormalTok{scores[,}\DecValTok{2}\NormalTok{]}\OperatorTok{<}\NormalTok{qt2[}\DecValTok{1}\NormalTok{])}
+\NormalTok{eva.qt2=evalmyb6[,scr.qt2]}
+\NormalTok{mcurve.qt2=}\KeywordTok{apply}\NormalTok{(eva.qt2,}\DecValTok{1}\NormalTok{,mean)}
+\KeywordTok{plot}\NormalTok{(alti4,mcurve.qt2,}\DataTypeTok{type=}\StringTok{"l"}\NormalTok{)}
+
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{2}\OperatorTok{:}\KeywordTok{length}\NormalTok{(qt2))\{}
+\NormalTok{  scr.qt2=}\KeywordTok{which}\NormalTok{(mypca}\OperatorTok{$}\NormalTok{scores[,}\DecValTok{2}\NormalTok{]}\OperatorTok{<}\NormalTok{qt2[i])}
+\NormalTok{  eva.qt2=evalmyb6[,scr.qt2]}
+\NormalTok{  mcurve.qt2=}\KeywordTok{apply}\NormalTok{(eva.qt2,}\DecValTok{1}\NormalTok{,mean)}
+  \KeywordTok{lines}\NormalTok{(alti4,mcurve.qt2,}\DataTypeTok{type=}\StringTok{"l"}\NormalTok{,}\DataTypeTok{col=}\NormalTok{i}\OperatorTok{+}\DecValTok{1}\NormalTok{)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-37-1}
 
 Le deuxième axe semble séparer les espèces en termes de fréquence,
 toutes devenant plus rares en altitude.
 
 Le nuage de points de cette ACP:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# nuage de points}
+\KeywordTok{rownames}\NormalTok{(mypca}\OperatorTok{$}\NormalTok{scores)=}\KeywordTok{colnames}\NormalTok{(oisd)}
+\KeywordTok{plot}\NormalTok{(mypca}\OperatorTok{$}\NormalTok{scores,}\DataTypeTok{type=}\StringTok{"n"}\NormalTok{,}\DataTypeTok{xlab=}\StringTok{"PC1"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"PC2"}\NormalTok{,}\DataTypeTok{xlim=}\KeywordTok{c}\NormalTok{(}\OperatorTok{-}\DecValTok{2}\NormalTok{,}\FloatTok{0.7}\NormalTok{),}\DataTypeTok{ylim=}\KeywordTok{c}\NormalTok{(}\OperatorTok{-}\FloatTok{0.5}\NormalTok{,}\FloatTok{0.5}\NormalTok{))}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{h=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\StringTok{"dashed"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{v=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\StringTok{"dashed"}\NormalTok{)}
+\KeywordTok{text}\NormalTok{(mypca}\OperatorTok{$}\NormalTok{scores,}\DataTypeTok{labels=}\KeywordTok{rownames}\NormalTok{(mypca}\OperatorTok{$}\NormalTok{scores))}
+\end{Highlighting}
+\end{Shaded}
 
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-38-1}
 
@@ -557,6 +940,14 @@ zosterops des Mascareignes, deux espèces qui sont donc présentes sur une
 bonne partie du gradient altitudinal avant une chute d'effectifs en
 haute altitude. On peut le vérifier sur les courbes individuelles
 (Zosterops : rouge ; Foudi : noir) :
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(}\DataTypeTok{x=}\DecValTok{0}\NormalTok{,}\DataTypeTok{y=}\DecValTok{0}\NormalTok{,}\DataTypeTok{xlim=}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{),}\DataTypeTok{ylim=}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{),}\DataTypeTok{type=}\StringTok{"n"}\NormalTok{,}\DataTypeTok{xlab=}\StringTok{"altitude"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"estimation log(abondance)"}\NormalTok{)}
+  \KeywordTok{lines}\NormalTok{(alti4,evalmyb6[,}\StringTok{"ZOBO"}\NormalTok{],}\DataTypeTok{type=}\StringTok{"l"}\NormalTok{,}\DataTypeTok{col=}\StringTok{"red"}\NormalTok{)}
+  \KeywordTok{lines}\NormalTok{(alti4,evalmyb6[,}\StringTok{"FOMA"}\NormalTok{],}\DataTypeTok{type=}\StringTok{"l"}\NormalTok{,}\DataTypeTok{col=}\StringTok{"black"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
 \includegraphics[width=\maxwidth]{../figures/unnamed-chunk-39-1}
 
