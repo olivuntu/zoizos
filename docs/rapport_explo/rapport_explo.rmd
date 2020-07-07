@@ -5,7 +5,7 @@ output: word_document
 ---
 
 ```{r setup, include = FALSE, cache = FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, cache = T, eval = T, echo = F, cache.path = '../cache/', fig.path = '../figures/')
 #knitr::opts_knit$set(root.dir = 'C:/Users/E7240/Documents/Reunion')
 ```
 
