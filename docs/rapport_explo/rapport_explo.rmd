@@ -97,12 +97,13 @@ Version avec regroupement de variables : BAOU = CULT + SAHE + SAAR, FRIC = FRAR 
 # fréquences d'habitat
 library(ade4)
 
-mil %<>% name_rows() %>%
+mil2 <- mil %>% name_rows() %>%
   mutate(BAOU = CULT + SAHE + SAAR, FRIC = FRAR + FRBA) %>%
   dplyr::select(- CULT, - SAHE, - SAAR, - FRAR, - FRBA) %>%
   name_rows()
 
-hab=prep.fuzzy(mil[,-1],col.blocks=ncol(mil)-1,labels="habita")
+
+hab=prep.fuzzy(mil2[,-1],col.blocks=ncol(mil2)-1,labels="habita")
 
 # altitude
 alti=as.data.frame(mil[,1])
@@ -110,9 +111,6 @@ rownames(alti) =rownames(mil)
 # matrice de dissimilarité de gower
 ktab=ktab.list.df(list(alti,hab))
 distmat=dist.ktab(ktab,type=c("Q","F"),option="scaledBYrange")
-```
-
-```{r, cache = F}
 # PCOA
 pco.habitat <- dudi.pco(distmat, scannf = F, nf = 5) # avec 5 axes environ 70% de variation expliquée
 ```
@@ -274,6 +272,14 @@ cumsum(afc.ois.com$eig)/sum(afc.ois.com$eig)
 s.label(afc.ois.com$li)
 s.label(afc.ois.com$co)
 ```
+
+Communautés de culture et de savane :
+
+```{r}
+s.value(afc.ois.com$li, mil$SAHE)
+s.value(afc.ois.com$li, mil$CULT)
+``` 
+
 
 Il y a un effet arche assez fort, mais au moins les points sont bien étalés dans l'ordination
 

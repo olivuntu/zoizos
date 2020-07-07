@@ -429,13 +429,6 @@ d'habitats}\label{analyse-en-coordonnuxe9es-principales-sur-la-matrice-dhabitats
 Version avec regroupement de variables : BAOU = CULT + SAHE + SAAR, FRIC
 = FRAR + FRBA
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{# PCOA}
-\NormalTok{pco.habitat <-}\StringTok{ }\KeywordTok{dudi.pco}\NormalTok{(distmat, }\DataTypeTok{scannf =}\NormalTok{ F, }\DataTypeTok{nf =} \DecValTok{5}\NormalTok{) }\CommentTok{# avec 5 axes environ 70% de variation expliquée}
-\end{Highlighting}
-\end{Shaded}
-
 L'analyse en coordonnées principale permet de résoudre les deux
 problèmes mentionnés ci dessus et d'ajouter l'altitude aux variables
 d'habitat.
@@ -475,7 +468,7 @@ autres)}\label{projection-des-points-et-des-variables-axe-1-vs-chacun-des-4-autr
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-11-1}
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-10-1}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -485,7 +478,7 @@ autres)}\label{projection-des-points-et-des-variables-axe-1-vs-chacun-des-4-autr
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-12-1}
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-11-1}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -495,7 +488,7 @@ autres)}\label{projection-des-points-et-des-variables-axe-1-vs-chacun-des-4-autr
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-13-1}
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-12-1}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -505,7 +498,7 @@ autres)}\label{projection-des-points-et-des-variables-axe-1-vs-chacun-des-4-autr
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-14-1}
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-13-1}
 
 \hypertarget{interpruxe9tation}{%
 \subsubsection{Interprétation}\label{interpruxe9tation}}
@@ -547,7 +540,7 @@ graduelle. Passer en présence/absence ne change rien au problème.
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-17-1}
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-16-1}
 
 Il y a deux points extrêmes :
 
@@ -593,7 +586,7 @@ des 4 autres) :
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-20-1}
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-19-1}
 
 1 vs 3
 
@@ -606,7 +599,7 @@ des 4 autres) :
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-21-1}
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-20-1}
 
 1 vs 4 :
 
@@ -619,7 +612,7 @@ des 4 autres) :
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-22-1}
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-21-1}
 
 1 vs 5:
 
@@ -632,7 +625,7 @@ des 4 autres) :
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-23-1}
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-22-1}
 
 L'analyse est écrasée par deux points qui n'ont rien de spécifique si ce
 n'est une espèce qui leur est unique, mais leur position sur les
@@ -715,11 +708,29 @@ points}\label{afc-sans-les-espuxe8ces-vues-sur-moins-de-5-des-points}}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-25-1}
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-24-1}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{s.label}\NormalTok{(afc.ois.com}\OperatorTok{$}\NormalTok{co)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-24-2}
+
+Communautés de culture et de savane :
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{s.value}\NormalTok{(afc.ois.com}\OperatorTok{$}\NormalTok{li, mil}\OperatorTok{$}\NormalTok{SAHE)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics[width=\maxwidth]{../figures/unnamed-chunk-25-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{s.value}\NormalTok{(afc.ois.com}\OperatorTok{$}\NormalTok{li, mil}\OperatorTok{$}\NormalTok{CULT)}
 \end{Highlighting}
 \end{Shaded}
 
